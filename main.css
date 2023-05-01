@@ -1,0 +1,116 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+:root{
+    --main-blue-color: #88C1F8;;
+    --main-dark-blue-color: #1F305E;
+    --main-white-color: #fff;
+    --main-jasmine-color: #f8de7e;
+    --main-cinnabar-color: ##E34234;
+    --main-amaranth-pink-color: #f19cbb;
+    --main-cosmic-late-color: #FFF8E7;
+    --main-timber-wolf-color: #dbd7d2;
+    --main-black-color: #000;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--main-blue-color);
+    
+}
+.topo p{
+    text-align: center;
+    background-color: var(--main-dark-blue-color);
+    color: var(--main-white-color);
+    padding: 2px;
+}
+/*
+
+.logo img{
+    width: 140px;
+    height: 100px;
+}
+.navbar ul{
+    display: absolute;
+    float: right;
+    margin-right: 50px;
+    margin-top: -70px;
+}
+.navbar li{
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    
+    background-color: white;
+    border-radius: 30px;
+    color: var(--main-black-color);
+
+}
+*/
+.logo img{
+    
+    width: 100px;
+    height: 70px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+header{
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition-duration: .3s;
+    margin-bottom: 10px;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+    user-select: none;
+    list-style-type: none;
+    
+    background-color: var(--main-white-color);
+    border-radius: 90px;
+
+    margin: 5px;
+    padding: 5px;
+}
+.navbar a{
+    color: var(--main-black-color);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.imagem{
+    position: relative;
+    z-index: 100;
+    margin-top: 156px;
+    margin-left: 5%;
+    width: 90%;
+    height: 400px;
+    background-color: var(--main-jasmine-color);
+    border-radius: 30px;
+    border: #000 solid 2px;
+}
+.elipse{
+    z-index: 1;
+    position: absolute;
+    width: 1675px;
+    height: 594px;
+    left: -82px;
+    top: 375px;
+    border-radius: 500px;
+    background-color: var(--main-cosmic-late-color);
+}
