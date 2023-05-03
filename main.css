@@ -20,9 +20,11 @@ html{
 }
 body{
     background-color: var(--main-blue-color);
-    
+    overflow-x: hidden;
+
 }
 .topo p{
+    z-index: 4000;
     text-align: center;
     background-color: var(--main-dark-blue-color);
     color: var(--main-white-color);
@@ -56,9 +58,9 @@ body{
     width: 100px;
     height: 70px;
     margin-left: 80px;
-    margin-top: 10px;
 }
 header{
+    margin-top: 10px;
     z-index: 1000;
     position: fixed;
     width: 100%;
@@ -70,6 +72,15 @@ header{
     background: transparent;
     transition-duration: .3s;
     margin-bottom: 10px;
+    transition: .2s;
+}
+.sticky{
+    top: 35px;
+    
+    transition: .2s;
+}
+.Nlogo{
+    display: none;
 }
 
 .navbar{
@@ -107,10 +118,62 @@ header{
 .elipse{
     z-index: 1;
     position: absolute;
-    width: 1675px;
-    height: 594px;
-    left: -82px;
-    top: 375px;
-    border-radius: 500px;
+    width: 120%;
+    height: 600px;
+    left: -10%;
+    top: 415px;
+    border-radius: 350px;
     background-color: var(--main-cosmic-late-color);
+}
+.quadrado{
+    z-index: 3;
+    background-color: var(--main-cosmic-late-color);
+    margin-top: 100px;
+    width: 120%;
+    left: -10%;
+    height: 1000px;
+}
+.imagem_esquerda{
+    margin-top: 10px;
+    z-index: 500;
+    position: absolute;
+    background-color: var(--main-blue-color);
+    width: 40%;
+    left: 5%;
+    height: 400px;
+    border-radius: 50px;
+    border: #000 solid 1px;
+}
+.imagem_direita{
+    margin-top: 10px;
+    z-index: 500;
+    position: absolute;
+    background-color: var(--main-dark-blue-color);
+    width: 40%;
+    right: 5%;
+    height: 400px;
+    border-radius: 50px;
+    border: #000 solid 1px;
+}
+.elipse2{
+    z-index: 1;
+    position: relative;
+    width: 120%;
+    height: 600px;
+    left: -10%;
+    top: -200px;
+    border-radius: 450px;
+    background-color: var(--main-cosmic-late-color);
+}
+.quadrado_rosa{
+    z-index: 1000;
+    position: relative;
+    background-color: var(--main-amaranth-pink-color);
+    width: 95%;
+    left: 2.5%;
+    height: 400px;
+    border-radius: 50px;
+    border: #000 solid 1px;
+    top: -400px;
+
 }
