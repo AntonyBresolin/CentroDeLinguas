@@ -47,6 +47,11 @@ header {
     transition-duration: .3s;
 }
 
+header img {
+    width: 100px;
+    transition: all .30s;
+}
+
 .h-btn {
     padding: 0 20px;
     height: 40px;
@@ -70,7 +75,6 @@ header {
 
 header.sticky {
     padding: 10px 10%;
-    background: var(--main-color);
 }
 
 .sticky a {
@@ -80,46 +84,9 @@ header.sticky {
 .sticky .navbar a::after {
     background: var(--bg-color);
 }
-
-.sticky .h-btn {
-    background: #fff;
-    color: #000;
-}
-
-.sticky svg {
-    width: 50px;
-    height: 50px;
+.sticky img {
+    width: 80px;
     padding: 0;
-}
-
-header.changed {
-    padding: 10px 10%;
-    background: white;
-}
-
-.changed a {
-    color: #000;
-}
-
-.changed .navbar a::after {
-    background: var(--main-color);
-}
-
-.changed .h-btn {
-    background: var(--main-color);
-    color: #ffffff;
-}
-
-.changed svg {
-    width: 50px;
-    height: 50px;
-    padding: 0;
-}
-
-
-svg {
-    transition: all .30s;
-    position: relative;
 }
 .imagem-inicial img{
     width: 100%;
