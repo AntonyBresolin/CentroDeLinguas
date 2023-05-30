@@ -26,7 +26,7 @@
 }
 
 body{
-    background-color: var(--main-blue-azure-color);
+    background-color: var(--main-blue-color);
     overflow-x: hidden;
 }
 .topo p{
@@ -136,6 +136,7 @@ svg {
     background-color: var(--main-cosmic-late-color);
     font-family: 'Roboto', sans-serif;
     padding-top: 20px;
+    max-height: 600px;
 
 }
 
@@ -144,11 +145,11 @@ svg {
     font-size: 32pt;
     padding: 70px 15%;
     padding-top: 30px;
+    display: flex;
+    position: static;
 }
-
-svg {
-    width: 100%;
-    padding: 0;
+#ondas-dao-trabalho{
+    background-color: var(--main-cosmic-late-color);
 }
 
 
