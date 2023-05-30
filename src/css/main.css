@@ -8,6 +8,8 @@
     text-decoration: none;
     scroll-behavior: smooth;
     scroll-padding-top: 3.5rem;
+    min-height: 500%;
+
 }
 
 :root{
@@ -20,10 +22,11 @@
     --main-cosmic-late-color: #FFF8E7;
     --main-timber-wolf-color: #dbd7d2;
     --main-black-color: #000;
+    --main-blue-azure-color: #4C7FD9;
 }
 
 body{
-    background-color: var(--main-blue-color);
+    background-color: var(--main-blue-azure-color);
     overflow-x: hidden;
 }
 .topo p{
@@ -124,4 +127,64 @@ svg {
 .imagem-inicial img{
     width: 100%;
 
+}
+
+#sobre {
+    width: 100%;
+    text-align: center;
+    font-size: 48pt;
+    background-color: var(--main-cosmic-late-color);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+
+}
+
+#sobre p {
+    text-align: justify; 
+    font-size: 32pt;
+    padding: 70px 15%;
+    padding-top: 30px;
+}
+
+svg {
+    width: 100%;
+    padding: 0;
+}
+
+
+.waves {
+    position: relative;
+    top: -30px;
+}
+
+.onda-1 {
+    animation: moveWave1 8s ease-in-out infinite alternate;
+}
+
+.onda-2 {
+    animation: moveWave2 9s 1.2s ease-in-out infinite alternate;
+
+}
+
+.onda-3 {
+    animation: moveWave3 10s 0.7s ease-in-out infinite alternate;
+
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: scaleX(5);
+    }
+}
+
+@keyframes moveWave2 {
+    from {
+        transform: scaleX(4);
+    }
+}
+
+@keyframes moveWave3 {
+    from {
+        transform: scaleX(3);
+    }
 }
