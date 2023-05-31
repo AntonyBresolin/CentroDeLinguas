@@ -10,7 +10,7 @@
     scroll-padding-top: 3.5rem;
 }
 
-:root{
+:root {
     --main-blue-color: #88C1F8;;
     --main-dark-blue-color: #2B3D73;
     --main-white-color: #fff;
@@ -20,13 +20,16 @@
     --main-cosmic-late-color: #FFF8E7;
     --main-timber-wolf-color: #dbd7d2;
     --main-black-color: #000;
+    --main-blue-azure-color: #4C7FD9;
+    min-height: 500%;
 }
 
-body{
-    background-color: var(--main-blue-color);
+body {
+    background-color: var(--main-blue-azure-color);
     overflow-x: hidden;
 }
-.topo p{
+
+.topo p {
     background: var(--main-dark-blue-color);
     color: var(--main-white-color);
     text-align: center;
@@ -43,12 +46,12 @@ header {
     align-items: center;
     justify-content: space-between;
     background: white;
-    padding: 15px 10%;
+    padding: 10px 5%;
     transition-duration: .3s;
 }
 
 header img {
-    width: 100px;
+    width: 70px;
     transition: all .30s;
 }
 
@@ -74,7 +77,8 @@ header img {
 
 
 header.sticky {
-    padding: 10px 10%;
+    position: fixed;
+    padding: 10px 5%;
 }
 
 .sticky a {
@@ -84,11 +88,75 @@ header.sticky {
 .sticky .navbar a::after {
     background: var(--bg-color);
 }
+
 .sticky img {
-    width: 80px;
+    width: 60px;
     padding: 0;
 }
-.imagem-inicial img{
+
+.imagem-inicial img {
     width: 100%;
 
+}
+
+#sobre {
+    width: 100%;
+    text-align: center;
+    font-size: 48pt;
+    background-color: var(--main-cosmic-late-color);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    max-height: 600px;
+
+}
+
+#sobre p {
+    text-align: justify;
+    font-size: 32pt;
+    padding: 70px 15%;
+    padding-top: 30px;
+    display: flex;
+    position: static;
+}
+
+#ondas-dao-trabalho {
+    background-color: var(--main-cosmic-late-color);
+}
+
+
+.waves {
+    position: relative;
+    top: -30px;
+}
+
+.onda-1 {
+    animation: moveWave1 8s ease-in-out infinite alternate;
+}
+
+.onda-2 {
+    animation: moveWave2 9s 1.2s ease-in-out infinite alternate;
+
+}
+
+.onda-3 {
+    animation: moveWave3 10s 0.7s ease-in-out infinite alternate;
+
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: scaleX(5);
+    }
+}
+
+@keyframes moveWave2 {
+    from {
+        transform: scaleX(4);
+    }
+}
+
+@keyframes moveWave3 {
+    from {
+        transform: scaleX(3);
+    }
 }
