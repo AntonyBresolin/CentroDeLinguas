@@ -27,6 +27,12 @@
 body {
     background-color: var(--main-blue-azure-color);
     overflow-x: hidden;
+    color: #0E0E0E;
+}
+
+.fundo_Inicial{
+    background: rgb(76,127,217);
+background: linear-gradient(0deg, rgba(76,127,217,1) 12%, rgba(255,255,255,1) 62%);
 }
 
 .topo p {
@@ -45,7 +51,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
+    background: transparent;
     padding: 10px 5%;
     transition-duration: .3s;
 }
@@ -94,10 +100,60 @@ header.sticky {
     padding: 0;
 }
 
-.imagem-inicial img {
-    width: 100%;
 
+.imagem-inicial img{
+    grid-area: imagem-inicio;
+    width: 100%;
+    margin-right: 10%;
 }
+.descricao-inicio{
+    grid-area: descricao-inicio;
+}
+.titulo-inicio {
+    grid-area: titulo-inicio;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 64px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+.subtitulo-inicio{
+    padding-top: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: lighter;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+.terceiro-titulo-inicio{
+    margin-top: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: normal;
+}
+.quarto-titulo-inicio{
+    margin-top: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: normal;
+}
+.citacao-titulo{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: lighter;
+    float: right;
+    
+    margin-right: 10%;
+}
+
+
+
+.grid-container-inicio{
+    display: grid;
+    grid-template-areas: 'descricao-inicio imagem-inicial imagem-inicial';
+ grid-template-columns: 1fr 2fr;
+    
+    gap: 40px;
+    width: 100%;
+    justify-items: center;
+    padding: 90px 5%;
+}
+
 
 #sobre {
     width: 100%;

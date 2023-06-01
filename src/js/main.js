@@ -3,7 +3,7 @@ const imagem_logo = document.querySelector("#logo");
 
 
 window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 20);
+  header.classList.toggle("sticky", window.scrollY > 40);
 });
 
 window.addEventListener("scroll", function () {
