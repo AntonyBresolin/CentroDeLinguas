@@ -40,7 +40,8 @@ background: linear-gradient(0deg, rgba(76,127,217,1) 12%, rgba(255,255,255,1) 62
     color: var(--main-white-color);
     text-align: center;
     padding: 10px 0;
-    font-size: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 header {
@@ -59,7 +60,25 @@ header {
 header img {
     width: 70px;
     transition: all .30s;
+    grid-area: imagem-logo;
 }
+header .logo p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    color: #2B3D73;
+
+}
+.texto1 {grid-area: texto1;}
+.texto2 {grid-area: texto2;}
+header .logo{
+    display: grid;
+    grid-template: 'imagem-logo texto1'
+                    'imagem-logo texto2';
+    grid-template-rows: 1fr;
+}
+
 
 .h-btn {
     padding: 0 20px;
@@ -75,6 +94,7 @@ header img {
     letter-spacing: 1px;
     transition: all .30s;
     margin-left: 30px;
+    text-transform: uppercase;
 }
 
 .h-btn:hover {
@@ -104,7 +124,8 @@ header.sticky {
 .imagem-inicial img{
     grid-area: imagem-inicio;
     width: 100%;
-    margin-right: 10%;
+    border-radius: 30px;
+    box-shadow: 9px 3px 10px 3px rgba(66, 64, 64, 0.562);
 }
 .descricao-inicio{
     grid-area: descricao-inicio;
@@ -119,26 +140,28 @@ header.sticky {
 .subtitulo-inicio{
     padding-top: 20px;
     font-family: 'League Spartan', sans-serif;
-    font-weight: lighter;
-    font-size: 32px;
+    font-weight: 400;
+    font-size: 28px;
     letter-spacing: 2px;
+    font-weight: 100;
 }
 .terceiro-titulo-inicio{
     margin-top: 20px;
     font-family: 'League Spartan', sans-serif;
     font-weight: normal;
+
 }
 .quarto-titulo-inicio{
     margin-top: 20px;
     font-family: 'League Spartan', sans-serif;
     font-weight: normal;
+    margin-top: 90px;
 }
 .citacao-titulo{
     font-family: 'League Spartan', sans-serif;
     font-weight: lighter;
-    float: right;
-    
     margin-right: 10%;
+    float: right;
 }
 
 
