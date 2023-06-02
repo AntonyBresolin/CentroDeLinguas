@@ -12,9 +12,12 @@
       href="../css/contato.css"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="topo">
@@ -24,39 +27,69 @@
       </p>
     </div>
     <header>
-      <img src="../img/WhatsApp_Image_2023-05-30_at_15.00.38-removebg-preview.png" alt="Logo" class="logo" />
-
-      <div class="botoes">
-        <a class="h-btn" href="#question">QUIZ</a>
-        <a class="h-btn" href="#contact">FAQ</a>
-        <a href="#test" class="h-btn">Contato</a>
+      <img
+        src="../img/WhatsApp_Image_2023-05-30_at_15.00.38-removebg-preview.png"
+        alt="Logo"
+        class="logo"
+      />
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
+      <ul class="nav-list">
+        <li><a class="h-btn" href="./quiz.html">QUIZ</a></li>
+        <li><a class="h-btn" href="./faq.html">FAQ</a></li>
+        <li><a href="./contato.html" class="h-btn">Contato</a></li>
+      </ul>
     </header>
 
     <main>
-        <h1>CONTATO</h1>
-        <section id="contact">
-            <div class="container-contact">
-                <form action="/process_get" method="GET">
-                    <label class="labelNome">Nome</label>
-                    <input name="nome" class="nome" type="text" placeholder="João Pedro" required>
-                    <label class="labelTelefone">Telefone</label>
-                    <input name="telefone" class="telefone" type="number" placeholder="(44) 99712-6310" required>
-                    <label class="labelEmail">Email</label>
-                    <input name="email" class="email" type="email" placeholder="nome@gmail.com" required>
-                    <label class="labelMensagem">Mensagem</label>
-                    <textarea name="mensagem" class="mensagem" placeholder="Mensagem" required></textarea>
-                    <button class="btn" type="submit" id="send-button" value="Enviar">Enviar</button>
-                </form>
-            </div>
-        </section>
+      <h1>CONTATO</h1>
+      <section id="contact">
+        <form action="/process_get" method="GET">
+          <label class="labelNome">Nome</label>
+          <input
+            name="nome"
+            class="nome"
+            type="text"
+            placeholder="João Pedro"
+            required
+          />
+          <label class="labelTelefone">Telefone</label>
+          <input
+            name="telefone"
+            class="telefone"
+            type="number"
+            placeholder="(44) 99712-6310"
+            required
+          />
+          <label class="labelEmail">Email</label>
+          <input
+            name="email"
+            class="email"
+            type="email"
+            placeholder="nome@gmail.com"
+            required
+          />
+          <label class="labelMensagem">Mensagem</label>
+          <textarea
+            name="mensagem"
+            class="mensagem"
+            placeholder="Mensagem"
+            required
+          ></textarea>
+          <button class="btn" type="submit" id="send-button" value="Enviar">
+            Enviar
+          </button>
+        </form>
+      </section>
     </main>
-
 
     <footer>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     </footer>
 
-    <script src="../js/contato.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
