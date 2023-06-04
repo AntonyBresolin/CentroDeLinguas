@@ -447,7 +447,7 @@ header.sticky {
     "text1 img1"
     "img2 text2"
     "text3 img3";
-  row-gap: 40px;
+  row-gap: 60px;
 }
 
 #sobre p {
@@ -540,7 +540,7 @@ header.sticky {
       "img2"
       "text3"
       "img3";
-    row-gap: 40px;
+    row-gap: 60px;
   }
 
   #sobre p {
@@ -583,7 +583,7 @@ header.sticky {
       "img2"
       "text3"
       "img3";
-    row-gap: 20px;
+    row-gap: 50px;
   }
 
   #sobre p {
