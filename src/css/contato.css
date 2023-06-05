@@ -24,8 +24,6 @@
 body{
     background-color: var(--main-blue-color);
     overflow-x: hidden;
-    width: 100%;
-    height: 100%;
 }
 .topo p{
     background: var(--main-dark-blue-color);
@@ -69,6 +67,25 @@ header img{
     transform: scale(1.1);
 }
 
+
+.nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    margin: 8px;
+  }
+  
+
 main h1{
     font-family: 'Lato', sans-serif;
     font-size: 80px;
@@ -78,9 +95,6 @@ main h1{
     text-align: center;
     color: var(--main-white-color);
 }
-main form{
-    padding: 0 20%;
-}
 
 #contact {
     background: var(--bg-color);
@@ -88,52 +102,40 @@ main form{
     position: relative;
 }
 
-.container-contact {
-    padding: 0px 15%;
-    align-items: center;
-    justify-content: center;
-}
-.container-contact .nome {
+.nome {
     grid-area: nome;
 }
 
-.container-contact .telefone {
+.telefone {
     grid-area: telefone;
 }
 
-.container-contact .email {
+.email {
     grid-area: email;
 }
-
-.container-contact .mensagem {
+.mensagem {
     grid-area: mensagem;
 }
-
-.container-contact .btn {
+.btn {
     grid-area: botao;
 }
-
-.container-contact .labelNome {
+.labelNome {
     grid-area: labelNome;
 }
-
-.container-contact .labelTelefone {
+.labelTelefone {
     grid-area: labelTelefone;
 }
-
-.container-contact .labelEmail {
+.labelEmail {
     grid-area: labelEmail;
 }
-
-.container-contact .labelMensagem {
+.labelMensagem {
     grid-area: labelMensagem;
 }
 form label{
     color: var(--main-white-color);
     margin-top: 15px;
 }
-
-.container-contact form {
+form {
     margin-top: 30px;
     display: grid;
     grid-template-areas:
@@ -145,30 +147,31 @@ form label{
         'mensagem mensagem'
         'botao botao';
     gap: 10px;
+    padding: 0 30%;
+    transition: all .3s;
 
 }
 
-.container-contact form input {
+form input {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid #ccc;
 }
 
-.container-contact form textarea {
+form textarea {
     padding: 15px;
     height: 250px;
     border-radius: 20px;
     border: 1px solid #ccc;
     resize: none;
 }
-
-.container-contact form input:focus,
-.container-contact form textarea:focus {
+form input:focus,
+form textarea:focus {
     border: 1px solid var(--main-color);
     outline: none;
 }
 
-.container-contact form .btn {
+form .btn {
     margin-top: 30px;
     padding: 10px;
     border-radius: 50px;
@@ -178,7 +181,7 @@ form label{
     font-size: 20px;
 }
 
-.container-contact form .btn:hover {
+form .btn:hover {
     background: #f5bd45;
     color: var(--main-white-color);
     padding: 10px;
@@ -188,21 +191,87 @@ form label{
 }
 
 
-
-
-
-
-
-
-
-
-
 footer p{
+    position: relative;
     background: var(--main-white-color);
     padding: 10px 0;
     text-align: center;
-    position: fixed;
     width: 100%;
-    
-    bottom: 0;
+    margin-top: 100px;
 }
+
+@media (max-width: 1300px) {
+    form{
+        padding: 0 20%;
+    }
+}
+@media (max-width: 800px) {
+    body{
+        
+    }
+    form{
+        grid-template: 'labelNome'
+        'nome'
+        'labelTelefone'
+        'telefone'
+        'labelEmail'
+        'email'
+        'labelMensagem'
+        'mensagem'
+        'botao';
+        padding: 0 10%;
+    }
+    form label{
+        margin-top: 5px;
+    }
+    main h1{
+        margin: 20px 0;
+        font-size: 40px;
+    }
+
+
+    .nav-list{
+        z-index: 10001;
+        position: absolute;
+        top: 16vh;
+        right: 0;
+        width: 50vw;
+        height: 84vh;
+        background: #d2d2d2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+      }
+    
+      .nav-list li{
+        opacity: 0;
+        margin-left: 0;
+      }
+      .nav-list a{
+        background: none;
+        color: #2b3d73;
+        font-size: 24px;
+      }
+      .mobile-menu{
+        display: block;
+      }
+    
+      .nav-list.active{
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in-out;
+      }
+}
+
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
