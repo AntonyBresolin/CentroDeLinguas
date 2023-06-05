@@ -68,3 +68,88 @@ header img{
 .h-btn:hover {
     transform: scale(1.1);
 }
+
+.pergunta {
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    margin-left: 15%;
+    letter-spacing: 20px;
+    font-weight: normal;
+    color: #FFFFFF;
+
+
+}
+
+.frequente {
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    margin-left: 40%;
+    letter-spacing: 20px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+#question {
+    
+    background: var(--main-color);
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+
+    margin-top: 400px;
+}
+
+.section-perguntas {
+    z-index: 300;
+    margin: 100px 15%;
+}
+
+.section-perguntas details {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.section-perguntas details summary {
+    background-color: #ffffff;
+    padding: 2%;
+    border-bottom: 2px solid #282828;
+}
+
+.section-perguntas details p {
+    background-color: #eae7e7;
+    padding: 2%;
+    transition: all .5s;
+}
+
+ion-icon {
+    position: relative;
+    float: right;
+    right: 0;
+    font-size: 25px;
+}
+
+ion-icon {
+    color: blue;
+}
+.bola-direita{
+    
+    margin-top: -300px;
+    right: -460px;
+    position: absolute;
+    background: var(--bg-color);
+    height: 700px;
+    width: 700px;
+    border-radius: 4500px;
+}
+
+footer p{
+    padding:  10px;
+    text-align: center;
+    background: #FEF7E6;
+    position: relative;
+    width: 100%;
+    
+    bottom: 0;
+}
