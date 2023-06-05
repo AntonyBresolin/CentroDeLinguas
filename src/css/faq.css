@@ -148,7 +148,7 @@ footer p{
     padding:  10px;
     text-align: center;
     background: #FEF7E6;
-    position: fixed;
+    position: relative;
     width: 100%;
     
     bottom: 0;
