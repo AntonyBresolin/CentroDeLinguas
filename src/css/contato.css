@@ -11,7 +11,6 @@
 
 :root {
     --main-blue-color: #4C7FD9;
-    ;
     --main-dark-blue-color: #2B3D73;
     --main-white-color: #fff;
     --main-jasmine-color: #f8de7e;
@@ -25,69 +24,133 @@
 body {
     background-color: var(--main-blue-color);
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
 }
-
-.topo p {
+  .topo{
     background: var(--main-dark-blue-color);
     color: var(--main-white-color);
     text-align: center;
     padding: 10px 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  .topo .fechar-notificacao{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--main-white-color);
     font-size: 20px;
-}
-
-header {
+    transition: all 0.3s;
+  }
+  .topo .fechar-notificacao:hover{
+    color: #f83636;
+    transform: scale(1.5);
+  }
+  
+  header {
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10%;
-    transition-duration: .3s;
-}
+    background: transparent;
+    padding: 10px 5%;
+    transition-duration: 0.3s;
+    align-content: center;
+    position: relative;
+  }
+  
+  header img {
+    width: 70px;
+    transition: all 0.3s;
+    grid-area: imagem-logo;
+  }
+  
+  header .logo p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    color: #ffffff;
+  }
 
-header img {
-    width: 140px;
-}
-
-.h-btn {
+  
+  
+  .texto1 {
+    grid-area: texto1;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .texto2 {
+    grid-area: texto2;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  
+  header .logo {
+    display: grid;
+    grid-template:
+      "imagem-logo texto1"
+      "imagem-logo texto2";
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #2b3d73;
+    margin: 8px;
+  }
+  
+  .h-btn {
     padding: 0 20px;
     height: 40px;
     display: inline-block;
     line-height: 42px;
     background: var(--main-white-color);
-    color: var(--main-black-color);
+    color: var(--main-dark-blue-color);
     border: none;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 500;
     letter-spacing: 1px;
-    transition: all .30s;
+    transition: all 0.3s;
     margin-left: 30px;
-}
-
-.h-btn:hover {
+    text-transform: uppercase;
+  }
+  
+  .h-btn:hover {
     transform: scale(1.1);
-}
+  }
 
-
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
-.mobile-menu {
+  
+.backgroud-menu{
     display: none;
-    cursor: pointer;
-}
-
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #ffffff;
-    margin: 8px;
-}
-
+  }
+  .cel-nav{
+    display: flex;
+  }
+  .midias-celular{
+    display: none;
+  }
 
 main h1 {
     font-family: 'Lato', sans-serif;
@@ -208,9 +271,9 @@ footer p {
     background: var(--main-white-color);
     padding: 10px 0;
     text-align: center;
-    width: 100%;
     margin-top: 100px;
 }
+
 
 @media (max-width: 1300px) {
     form {
@@ -219,6 +282,27 @@ footer p {
 }
 
 @media (max-width: 800px) {
+
+    .topo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2%;
+      }
+    
+      .topo .fechar-notificacao{
+        position: relative;
+        display: block;
+      cursor: pointer;
+      color: #f83636;
+      background: #fff;
+      border-radius: 50%;
+      transition: all 0.3s;
+      }
+      header{
+        background: var(--main-blue-color);
+      }
+
     form {
         grid-template: 'labelNome'
             'nome'
@@ -245,38 +329,74 @@ footer p {
     .nav-list {
         z-index: 10001;
         position: absolute;
-        top: 16vh;
-        right: 0;
-        width: 50vw;
-        height: 84vh;
-        background: #d2d2d2;
+        top: 115px;
+        right: auto;
+        background: #ffffff;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        transition: all 1s cubic-bezier(0.37, 0, 0.63, 1);
+        display: none;
+      }
+      .backgroud-menu{
+        z-index: 1;
+        position: absolute;
+        background-color: #1761e16b;;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+      }
+      .background-celular-ativo{
+        display: block;
+        animation: background-celular-ativo 1s;
+      }
+      .cel-nav{
+        display: flex;
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        transform: translateY(-150%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-list li {
+        justify-content: center;
+        transition: transform 1s cubic-bezier(0.37, 0, 0.63, 1);
+      }
+      .cel-nav li{
+        
+        padding-top: 5vh;
+      }
+    
+      .nav-list li {
         opacity: 0;
         margin-left: 0;
-    }
-
-    .nav-list a {
+      }
+    
+      .nav-list a {
         background: none;
         color: #2b3d73;
         font-size: 24px;
-    }
-
-    .mobile-menu {
+      }
+    
+      .mobile-menu {
         display: block;
-    }
-
-    .nav-list.active {
+      }
+    
+      .nav-list.active {
+        transition: all 1s ease-in-out;
         display: flex;
-        transform: translateY(0%);
-        transition: transform 0.5s ease-in-out;
-    }
+        flex-direction: column;
+        justify-content: space-between;
+        animation: aumentar 1s cubic-bezier(0.37, 0, 0.63, 1);
+        width: 90vw;
+        height: 50vh;
+        
+      }
+      .midias-celular-ativo{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        animation: midias-celular 1.5s;
+      }
+    
 }
 
 
@@ -291,3 +411,37 @@ footer p {
         transform: translateX(0px);
     }
 }
+
+@keyframes background-celular-ativo{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes aumentar{
+    from{
+      width: 90vw;
+      height: 0vh;
+    }
+    to{
+      width: 90vw;
+      height: 50vh;
+    }
+  }
+  @keyframes midias-celular{
+    from{
+      opacity: 0;
+      scale: 0;
+    }
+    50%{
+      opacity: 0;
+      scale: 0;
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+    }
+  }

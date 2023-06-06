@@ -1,9 +1,16 @@
 const header = document.querySelector("header");
 const imagem_logo = document.querySelector("#logo");
+const notificacao_topo = document.querySelector(".topo");
+const close_btn_notificacao = document.querySelector(".fechar-notificacao");
+const background_celular = document.querySelector(".backgroud-menu");
+const midias_sociais = document.querySelector(".midias-celular");
 
 
-window.addEventListener("scroll", function () {
- // header.classList.toggle("sticky", window.scrollY > 40);
+
+
+
+close_btn_notificacao.addEventListener("click", function () {
+  notificacao_topo.style.display = "none";
 });
 
 class MobileNavbar {
@@ -12,6 +19,7 @@ class MobileNavbar {
       this.navList = document.querySelector(navList);
       this.navLinks = document.querySelectorAll(navLinks);
       this.activeClass = "active";
+      
   
       this.handleClick = this.handleClick.bind(this);
     }
@@ -20,7 +28,7 @@ class MobileNavbar {
       this.navLinks.forEach((link, index) => {
         link.style.animation
           ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+          : (link.style.animation = `navLinkFade 1s ease forwards ${
               index / 7 + 0.3
             }s`);
       });
@@ -29,6 +37,9 @@ class MobileNavbar {
     handleClick() {
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
+      background_celular.classList.toggle("background-celular-ativo");
+      midias_sociais.classList.toggle("midias-celular-ativo");
+      
       this.animateLinks();
     }
   

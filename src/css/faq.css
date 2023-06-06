@@ -1,155 +1,353 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    scroll-padding-top: 3.5rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem;
 }
 
-:root{
-    --main-blue-color: #4C7FD9;;
-    --main-dark-blue-color: #2B3D73;
-    --main-white-color: #fff;
-    --main-jasmine-color: #f8de7e;
-    --main-cinnabar-color: ##E34234;
-    --main-amaranth-pink-color: #f19cbb;
-    --main-cosmic-late-color: #FFF8E7;
-    --main-timber-wolf-color: #dbd7d2;
-    --main-black-color: #000;
+:root {
+  --main-blue-color: #4c7fd9;
+  --main-dark-blue-color: #2b3d73;
+  --main-white-color: #fff;
+  --main-jasmine-color: #f8de7e;
+  --main-cinnabar-color: ##e34234;
+  --main-amaranth-pink-color: #f19cbb;
+  --main-cosmic-late-color: #fff8e7;
+  --main-timber-wolf-color: #dbd7d2;
+  --main-black-color: #000;
 }
 
-body{
-    background-color: var(--main-blue-color);
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
+body {
+  background-color: var(--main-blue-color);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
 }
-.topo p{
-    background: var(--main-dark-blue-color);
-    color: var(--main-white-color);
-    text-align: center;
-    padding: 10px 0;
-    font-size: 20px;
+
+.topo {
+  background: var(--main-dark-blue-color);
+  color: var(--main-white-color);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.topo .fechar-notificacao {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--main-white-color);
+  font-size: 20px;
+  transition: all 0.3s;
+}
+.topo .fechar-notificacao:hover {
+  color: #f83636;
+  transform: scale(1.5);
 }
 
 header {
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
-    transition-duration: .3s;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 10px 5%;
+  transition-duration: 0.3s;
+  align-content: center;
+  position: relative;
 }
-header img{
-    width: 140px;
+
+header img {
+  width: 70px;
+  transition: all 0.3s;
+  grid-area: imagem-logo;
+}
+
+header .logo p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.texto1 {
+  grid-area: texto1;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.texto2 {
+  grid-area: texto2;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header .logo {
+  display: grid;
+  grid-template:
+    "imagem-logo texto1"
+    "imagem-logo texto2";
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #2b3d73;
+  margin: 8px;
 }
 
 .h-btn {
-    padding: 0 20px;
-    height: 40px;
-    display: inline-block;
-    line-height: 42px;
-    background: var(--main-white-color);
-    color: var(--main-black-color);
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    transition: all .30s;
-    margin-left: 30px;
+  padding: 0 20px;
+  height: 40px;
+  display: inline-block;
+  line-height: 42px;
+  background: var(--main-white-color);
+  color: var(--main-dark-blue-color);
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  margin-left: 30px;
+  text-transform: uppercase;
 }
 
 .h-btn:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.backgroud-menu {
+  display: none;
+}
+.cel-nav {
+  display: flex;
+}
+.midias-celular {
+  display: none;
 }
 
 .pergunta {
-    font-family: 'Lato', sans-serif;
-    font-size: 60px;
-    margin-left: 15%;
-    letter-spacing: 20px;
-    font-weight: normal;
-    color: #FFFFFF;
-
-
+  font-family: "Lato", sans-serif;
+  font-size: 60px;
+  margin-left: 15%;
+  letter-spacing: 20px;
+  font-weight: normal;
+  color: #ffffff;
 }
 
 .frequente {
-    font-family: 'Lato', sans-serif;
-    font-size: 60px;
-    margin-left: 40%;
-    letter-spacing: 20px;
-    font-weight: normal;
-    color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+  font-size: 60px;
+  margin-left: 40%;
+  letter-spacing: 20px;
+  font-weight: normal;
+  color: #ffffff;
 }
 
 #question {
-    
-    background: var(--main-color);
-    width: 100%;
-    height: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    position: relative;
+  background: var(--main-color);
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
 
-    margin-top: 400px;
+  margin-top: 400px;
 }
 
 .section-perguntas {
-    z-index: 300;
-    margin: 100px 15%;
+  z-index: 300;
+  margin: 100px 15%;
 }
 
 .section-perguntas details {
-    font-size: 18px;
-    margin-bottom: 2px;
+  font-size: 18px;
+  margin-bottom: 2px;
 }
 
 .section-perguntas details summary {
-    background-color: #ffffff;
-    padding: 2%;
-    border-bottom: 2px solid #282828;
+  background-color: #ffffff;
+  padding: 2%;
+  border-bottom: 2px solid #282828;
 }
 
 .section-perguntas details p {
-    background-color: #eae7e7;
-    padding: 2%;
-    transition: all .5s;
+  background-color: #eae7e7;
+  padding: 2%;
+  transition: all 0.5s;
 }
 
 ion-icon {
+  position: relative;
+  float: right;
+  right: 0;
+  font-size: 25px;
+}
+
+ion-icon {
+  color: blue;
+}
+
+footer p {
+  padding: 10px;
+  text-align: center;
+  background: #fef7e6;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+  }
+
+  .topo .fechar-notificacao {
     position: relative;
-    float: right;
-    right: 0;
-    font-size: 25px;
-}
+    display: block;
+    cursor: pointer;
+    color: #f83636;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  header {
+    background: var(--main-blue-color);
+  }
 
-ion-icon {
-    color: blue;
-}
-.bola-direita{
-    
-    margin-top: -300px;
-    right: -460px;
+  .nav-list {
+    z-index: 10001;
     position: absolute;
-    background: var(--bg-color);
-    height: 700px;
-    width: 700px;
-    border-radius: 4500px;
+    top: 115px;
+    right: auto;
+    background: #ffffff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 1s cubic-bezier(0.37, 0, 0.63, 1);
+    display: none;
+  }
+  .backgroud-menu {
+    z-index: 1;
+    position: absolute;
+    background-color: #1761e16b;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  .background-celular-ativo {
+    display: block;
+    animation: background-celular-ativo 1s;
+  }
+  .cel-nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s cubic-bezier(0.37, 0, 0.63, 1);
+  }
+  .cel-nav li {
+    padding-top: 5vh;
+    animation: letras 2s;
+  }
+
+  .nav-list a {
+    background: none;
+    color: #2b3d73;
+    font-size: 24px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-list.active {
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: aumentar 1s cubic-bezier(0.37, 0, 0.63, 1);
+    width: 90vw;
+    height: 50vh;
+  }
+  .midias-celular-ativo {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    animation: midias-celular 1.5s;
+  }
 }
 
-footer p{
-    padding:  10px;
-    text-align: center;
-    background: #FEF7E6;
-    position: relative;
-    width: 100%;
-    
-    bottom: 0;
+@keyframes background-celular-ativo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes aumentar {
+  from {
+    width: 90vw;
+    height: 0vh;
+  }
+  to {
+    width: 90vw;
+    height: 50vh;
+  }
+}
+@keyframes midias-celular {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  50% {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes letras{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
