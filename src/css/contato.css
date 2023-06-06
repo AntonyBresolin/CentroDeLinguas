@@ -9,8 +9,9 @@
     scroll-padding-top: 3.5rem;
 }
 
-:root{
-    --main-blue-color: #4C7FD9;;
+:root {
+    --main-blue-color: #4C7FD9;
+    ;
     --main-dark-blue-color: #2B3D73;
     --main-white-color: #fff;
     --main-jasmine-color: #f8de7e;
@@ -21,11 +22,12 @@
     --main-black-color: #000;
 }
 
-body{
+body {
     background-color: var(--main-blue-color);
     overflow-x: hidden;
 }
-.topo p{
+
+.topo p {
     background: var(--main-dark-blue-color);
     color: var(--main-white-color);
     text-align: center;
@@ -44,7 +46,8 @@ header {
     padding: 0 10%;
     transition-duration: .3s;
 }
-header img{
+
+header img {
     width: 140px;
 }
 
@@ -71,22 +74,22 @@ header img{
 .nav-list {
     display: flex;
     align-items: center;
-  }
-  
-  .mobile-menu {
+}
+
+.mobile-menu {
     display: none;
     cursor: pointer;
-  }
-  
-  .mobile-menu div{
+}
+
+.mobile-menu div {
     width: 32px;
     height: 2px;
     background: #ffffff;
     margin: 8px;
-  }
-  
+}
 
-main h1{
+
+main h1 {
     font-family: 'Lato', sans-serif;
     font-size: 80px;
     text-decoration: none;
@@ -113,28 +116,36 @@ main h1{
 .email {
     grid-area: email;
 }
+
 .mensagem {
     grid-area: mensagem;
 }
+
 .btn {
     grid-area: botao;
 }
+
 .labelNome {
     grid-area: labelNome;
 }
+
 .labelTelefone {
     grid-area: labelTelefone;
 }
+
 .labelEmail {
     grid-area: labelEmail;
 }
+
 .labelMensagem {
     grid-area: labelMensagem;
 }
-form label{
+
+form label {
     color: var(--main-white-color);
     margin-top: 15px;
 }
+
 form {
     margin-top: 30px;
     display: grid;
@@ -165,6 +176,7 @@ form textarea {
     border: 1px solid #ccc;
     resize: none;
 }
+
 form input:focus,
 form textarea:focus {
     border: 1px solid var(--main-color);
@@ -191,7 +203,7 @@ form .btn:hover {
 }
 
 
-footer p{
+footer p {
     position: relative;
     background: var(--main-white-color);
     padding: 10px 0;
@@ -201,36 +213,36 @@ footer p{
 }
 
 @media (max-width: 1300px) {
-    form{
+    form {
         padding: 0 20%;
     }
 }
+
 @media (max-width: 800px) {
-    body{
-        
-    }
-    form{
+    form {
         grid-template: 'labelNome'
-        'nome'
-        'labelTelefone'
-        'telefone'
-        'labelEmail'
-        'email'
-        'labelMensagem'
-        'mensagem'
-        'botao';
+            'nome'
+            'labelTelefone'
+            'telefone'
+            'labelEmail'
+            'email'
+            'labelMensagem'
+            'mensagem'
+            'botao';
         padding: 0 10%;
     }
-    form label{
+
+    form label {
         margin-top: 5px;
     }
-    main h1{
+
+    main h1 {
         margin: 20px 0;
         font-size: 40px;
     }
 
 
-    .nav-list{
+    .nav-list {
         z-index: 10001;
         position: absolute;
         top: 16vh;
@@ -241,37 +253,41 @@ footer p{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
+        transform: translateY(-150%);
         transition: transform 0.5s ease-in;
-      }
-    
-      .nav-list li{
+    }
+
+    .nav-list li {
         opacity: 0;
         margin-left: 0;
-      }
-      .nav-list a{
+    }
+
+    .nav-list a {
         background: none;
         color: #2b3d73;
         font-size: 24px;
-      }
-      .mobile-menu{
+    }
+
+    .mobile-menu {
         display: block;
-      }
-    
-      .nav-list.active{
-        transform: translateX(0%);
+    }
+
+    .nav-list.active {
+        display: flex;
+        transform: translateY(0%);
         transition: transform 0.5s ease-in-out;
-      }
+    }
 }
 
 
 @keyframes navLinkFade {
     from {
-      opacity: 0;
-      transform: translateX(50px);
+        opacity: 0;
+        transform: translateX(50px);
     }
+
     to {
-      opacity: 1;
-      transform: translateX(0px);
+        opacity: 1;
+        transform: translateX(0px);
     }
-  }
+}
