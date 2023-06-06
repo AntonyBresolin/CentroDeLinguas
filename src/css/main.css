@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -76,10 +76,12 @@ header .logo p {
 
 .texto1 {
   grid-area: texto1;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .texto2 {
   grid-area: texto2;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 header .logo {
@@ -160,6 +162,7 @@ header.sticky {
 
 .descricao-inicio {
   grid-area: descricao-inicio;
+  font-family: "Montserrat", sans-serif;
 }
 
 .titulo-inicio {
@@ -172,30 +175,36 @@ header.sticky {
 
 .subtitulo-inicio {
   padding-top: 20px;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
 .terceiro-titulo-inicio {
   margin-top: 20px;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
+  font-size: 24px;
+  padding-right: 80px;
 }
 
 .quarto-titulo-inicio {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   margin-top: 90px;
+  font-size: 18px;
+  padding-right: 80px;
 }
 
 .citacao-titulo {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   margin-right: 10%;
   float: right;
+  font-size: 14px;
+  padding-right: 80px;
 }
 
 .grid-container-inicio {
