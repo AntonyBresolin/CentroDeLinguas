@@ -246,6 +246,7 @@ header.sticky {
 #flex-sobre-onda {
   background-color: var(--main-blue-azure-color);
   width: 100%;
+  margin-top: -100px;
 }
 
 #flex-sobre-onda div {
