@@ -1,4 +1,4 @@
-const header = document.querySelector("header");
+const header = document.querySelector(".header");
 const imagem_logo = document.querySelector("#logo");
 const notificacao_topo = document.querySelector(".topo");
 const close_btn_notificacao = document.querySelector(".fechar-notificacao");
@@ -7,6 +7,12 @@ const midias_sociais = document.querySelector(".midias-celular");
 
 
 
+
+window.addEventListener("scroll", function () {
+  if(this.window.innerWidth > 820){
+    header.classList.toggle("scrollado", window.scrollY > 0);
+  }
+});
 
 
 close_btn_notificacao.addEventListener("click", function () {
@@ -39,6 +45,7 @@ class MobileNavbar {
       this.mobileMenu.classList.toggle(this.activeClass);
       background_celular.classList.toggle("background-celular-ativo");
       midias_sociais.classList.toggle("midias-celular-ativo");
+      header.classList.toggle("header-celular-ativo");
       
       this.animateLinks();
     }

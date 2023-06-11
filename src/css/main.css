@@ -24,16 +24,24 @@
 }
 
 body {
-  background-color: var(--main-blue-azure-color);
+  background-color: rgb(76, 127, 217);
   overflow-x: hidden;
   color: #0e0e0e;
 }
 
 .fundo_Inicial {
-  background: rgb(76, 127, 217);
   background: linear-gradient(0deg,
       rgba(76, 127, 217, 1) 12%,
       rgba(255, 255, 255, 1) 62%);
+      padding-bottom: 20px;
+}
+
+.fixar_topo{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
 }
 
 .topo{
@@ -67,11 +75,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+  background: var(--main-white-color);
   padding: 10px 5%;
   transition-duration: 0.3s;
   align-content: center;
   position: relative;
+}
+header.scrollado{
+  background: var(--main-white-color);
 }
 
 header img {
@@ -120,7 +131,7 @@ header .logo {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: #2b3d73;
+  background: #ffffff;
   margin: 8px;
 }
 
@@ -154,27 +165,7 @@ header .logo {
   display: none;
 }
 
-header.sticky {
-  position: fixed;
-  padding: 10px 5%;
-}
 
-.sticky a {
-  color: #fff;
-}
-
-.sticky .navbar a::after {
-  background: var(--bg-color);
-}
-
-.sticky img {
-  width: 60px;
-  padding: 0;
-}
-
-.inicio-celular {
-  display: none;
-}
 
 .imagem-inicial img {
   grid-area: imagem-inicio;
@@ -197,6 +188,7 @@ header.sticky {
 }
 
 .subtitulo-inicio {
+  grid-area: subtitulo-inicio;
   padding-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -206,6 +198,7 @@ header.sticky {
 }
 
 .terceiro-titulo-inicio {
+  grid-area: terceiro-titulo-inicio;
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -603,6 +596,9 @@ header.sticky {
 
 
 @media (max-width: 800px) {
+  .fundo_Inicial{
+    background: #4C7FD9;
+  }
   .topo{
     display: flex;
     justify-content: space-between;
@@ -620,10 +616,29 @@ header.sticky {
   transition: all 0.3s;
   }
   header{
-    background: #fff;
+    background: #4C7FD9;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 96vw;
+    margin: 10px auto;
+  }
+  
+ 
+  header .logo p{
+    color: #fff;
   }
   .fundo_Inicial{
     z-index: 10000;
+  }
+
+  .header-celular-ativo{
+    background: #fff;
+  }
+  .header-celular-ativo .logo p{
+    color: #2b3d73;
+  }
+  .header-celular-ativo .mobile-menu div{
+    background: #2b3d73;
   }
 
   #flex-sobre-onda svg{
@@ -636,6 +651,7 @@ header.sticky {
     z-index: 10001;
     position: absolute;
     top: 115px;
+    left: 0;
     right: auto;
     background: #ffffff;
     border-bottom-left-radius: 30px;
@@ -646,7 +662,7 @@ header.sticky {
   .backgroud-menu{
     z-index: 1;
     position: absolute;
-    background-color: #ffe06eb7;;
+    background-color: #4c80d99c;
     width: 100%;
     height: 100vh;
     left: 0;
@@ -660,13 +676,16 @@ header.sticky {
     display: flex;
     width: 100%;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     transition: transform 1s cubic-bezier(0.37, 0, 0.63, 1);
+    padding: 0 5%;
+    
   }
   .cel-nav li{
-    
-    padding-top: 5vh;
+    padding-top: 2vh;
+    width: 100%;
+    border-bottom: gray 1px solid;
+    text-align: right;
   }
 
   .nav-list li {
@@ -690,22 +709,67 @@ header.sticky {
     flex-direction: column;
     justify-content: space-between;
     animation: aumentar 1s cubic-bezier(0.37, 0, 0.63, 1);
-    width: 90vw;
-    height: 50vh;
+    width: 96vw;
+    height: 30vh;
     
   }
   .midias-celular-ativo{
     display: flex;
     width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-bottom: 10px;
     animation: midias-celular 1.5s;
+    align-items: center;
   }
+  .midias-celular-ativo img{
+    width: 50px;
+    margin-left: 5%;
+  }
+  .titulo-inicio{
+    font-size: 20px;
+  }
+  .subtitulo-inicio{
+    font-size: 14px;
+    justify-content: start;
+    text-justify: justify;
+    margin-top: 0;
+  }
+  .terceiro-titulo-inicio{
+    font-size: 15px;
+    justify-content: start;
+    text-justify: justify;
+    padding: 0;    
+  }
+  .citacao-titulo{display: none;}
+  .quarto-titulo-inicio{display: none;}
+.descricao-inicio{
+  display: grid;
+  grid-template-areas: 'titulo-inicio terceiro-titulo-inicio'
+                        'subtitulo-inicio terceiro-titulo-inicio ';
 
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  padding: 0px 2%;
+  text-align: start;
+  align-items: start;
+  justify-content: start;
+
+
+}
 
   .grid-container-inicio {
-    display: none;
+    padding: 0px 2%;
+    color: var(--main-white-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 'imagem-inicial'
+                           'descricao-inicio';
+  }
+
+  .imagem-inicial img{
+    box-shadow: none;
   }
 
   .inicio-celular {
@@ -932,12 +996,12 @@ header.sticky {
 
 @keyframes aumentar{
   from{
-    width: 90vw;
+    width: 96vw;
     height: 0vh;
   }
   to{
-    width: 90vw;
-    height: 50vh;
+    width: 96vw;
+    height: 30vh;
   }
 }
 @keyframes midias-celular{
