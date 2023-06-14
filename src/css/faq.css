@@ -126,35 +126,36 @@ header .logo {
 .midias-celular {
   display: none;
 }
+.div-cabecalho{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10%;
+  width: 100%;
+  transition: all .7s ease-in-out;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
 
 .pergunta {
   font-family: "Lato", sans-serif;
-  font-size: 60px;
-  margin-left: 15%;
+  font-size: 100px;
   letter-spacing: 20px;
   font-weight: normal;
   color: #ffffff;
+  transition: all .7s ease-in-out;
+  
 }
 
 .frequente {
   font-family: "Lato", sans-serif;
-  font-size: 60px;
-  margin-left: 40%;
+  font-size: 100px;
   letter-spacing: 20px;
   font-weight: normal;
   color: #ffffff;
+  margin-left: 40%;
+  transition: all .7s ease-in-out;
 }
 
-#question {
-  background: var(--main-color);
-  width: 100%;
-  height: 100%;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  position: relative;
-
-  margin-top: 400px;
-}
 
 .section-perguntas {
   z-index: 300;
@@ -195,6 +196,36 @@ footer p {
   background: #fef7e6;
   position: relative;
   width: 100%;
+}
+
+@media(max-width: 1500px){
+  .div-cabecalho{
+    padding: 0px 10%;
+  }
+  .pergunta {
+    font-size: 80px;
+
+  }
+  .frequente{
+    font-size: 80px;
+  }
+}
+@media(max-width: 1250px){
+  .pergunta {
+    font-size: 60px;
+
+  }
+  .frequente{
+    font-size: 60px;
+  }
+}
+@media(max-width: 1000px){
+  .div-cabecalho{
+    padding-bottom: 0px;
+  }
+  .frequente{
+    margin-left: 20%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -298,7 +329,45 @@ footer p {
     width: 50px;
     margin-left: 5%;
   }
+
+  .div-cabecalho{
+    padding: 0px 5%;
+  }
+  .pergunta{
+    font-size: 50px;
+  }
+  .frequente{
+    margin-left: 10%;
+    font-size: 50px;
+  }
+
 }
+
+@media (max-width: 600px) {
+  .div-cabecalho{
+    padding: 0px 5%;
+    align-items: center;
+  }
+  .pergunta{
+    font-size: 50px;
+  }
+  .frequente{
+    font-size: 50px;
+    margin-left: 0%;
+  }
+}
+@media (max-width: 500px) {
+  .div-cabecalho{
+    padding: 0px 5%;
+  }
+  .pergunta{
+    font-size: 30px;
+  }
+  .frequente{
+    font-size: 30px;
+  }
+}
+
 
 
 @keyframes navLinkFade {
