@@ -660,3 +660,6 @@ header.sticky {
     transform: scaleX(3);
   }
 }
+#flex-sobre-ondaa{
+  background-color: var(--main-cosmic-late-color);
+}
