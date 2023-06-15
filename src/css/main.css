@@ -365,7 +365,16 @@ footer {
       "text3 img3";
     row-gap: 40px;
   }
+  #txt_1_sobre {
+    padding-left: 12%;
+  }
+  #txt_2_sobre {
+    padding-right: 12%;
 
+  }
+  #txt_3_sobre {
+    padding-left: 12%;
+  }
   #sobre p {
     font-size: 24pt;
     line-height: 50px;
@@ -434,6 +443,17 @@ footer {
     row-gap: 40px;
   }
 
+  #txt_1_sobre {
+    padding-left: 12%;
+  }
+  #txt_2_sobre {
+    padding-right: 12%;
+
+  }
+  #txt_3_sobre {
+    padding-left: 12%;
+  }
+  
   #sobre p {
     font-size: 16pt;
     line-height: 30px;
