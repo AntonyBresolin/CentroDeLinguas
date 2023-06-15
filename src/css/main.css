@@ -77,7 +77,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: var(--main-white-color);
-  padding: 10px 5%;
+  padding: 0px 5%;
   transition-duration: 0.3s;
   align-content: center;
   position: relative;
@@ -534,10 +534,8 @@ header .logo {
   }
   header {
     background: #4c7fd9;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 96vw;
     margin: 10px auto;
+    padding: 10px 5%;
   }
 
   header .logo p {
@@ -549,6 +547,9 @@ header .logo {
 
   .header-celular-ativo {
     background: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 96vw;
   }
   .header-celular-ativo .logo p {
     color: #2b3d73;

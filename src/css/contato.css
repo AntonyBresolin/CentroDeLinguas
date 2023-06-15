@@ -41,7 +41,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  padding: 10px 5%;
+  padding: 0px 5%;
   transition-duration: 0.3s;
   align-content: center;
   position: relative;
@@ -257,12 +257,9 @@ footer p {
 }
 
 @media (max-width: 800px) {
-
   header {
     background: #4c7fd9;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 96vw;
+    padding: 10px 5%;
     margin: 10px auto;
   }
 
@@ -272,6 +269,9 @@ footer p {
 
   .header-celular-ativo {
     background: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 96vw;
   }
   .header-celular-ativo .logo p {
     color: #2b3d73;
