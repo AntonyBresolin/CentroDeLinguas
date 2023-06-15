@@ -158,7 +158,6 @@ header .logo {
 
 
 .section-perguntas {
-  z-index: 300;
   margin: 100px 15%;
 }
 
@@ -341,6 +340,13 @@ footer p {
     font-size: 50px;
   }
 
+  .section-perguntas{
+    margin: 50px 5%;
+  }
+  .section-perguntas details summary{
+    padding: 20px;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -365,6 +371,9 @@ footer p {
   }
   .frequente{
     font-size: 30px;
+  }
+  .section-perguntas{
+    margin: 50px 1%;
   }
 }
 
