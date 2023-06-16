@@ -45,6 +45,7 @@ header {
   transition-duration: 0.3s;
   align-content: center;
   position: relative;
+  margin-bottom: 40px;
 }
 
 header img {
@@ -125,6 +126,10 @@ header .logo {
 }
 .midias-celular {
   display: none;
+}
+
+.titulo-pagina{
+  display: grid;
 }
 
 .pergunta {

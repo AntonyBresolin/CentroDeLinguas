@@ -32,6 +32,7 @@ body {
   width: 100%;
 }
 
+
 header {
   width: 100%;
   top: 0;
@@ -45,6 +46,7 @@ header {
   transition-duration: 0.3s;
   align-content: center;
   position: relative;
+  margin-bottom: 40px;
 }
 
 header img {
@@ -185,7 +187,7 @@ form label {
 }
 
 form {
-    margin-top: 30px;
+    margin-top: 10px;
     display: grid;
     grid-template-areas:
         'labelNome labelTelefone'
@@ -209,7 +211,7 @@ form input {
 
 form textarea {
     padding: 15px;
-    height: 250px;
+    height: 150px;
     border-radius: 20px;
     border: 1px solid #ccc;
     resize: none;
