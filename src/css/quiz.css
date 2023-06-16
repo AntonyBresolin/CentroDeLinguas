@@ -27,6 +27,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   width: 100%;
 }
@@ -146,7 +147,7 @@ main h1 {
 }
 
 .button {
-  background-color: #fff8e7;
+  background-color: #ffffff;
   text-decoration-color: #000;
   border-radius: 5px;
   width: 100%;
@@ -165,12 +166,11 @@ main h1 {
 }
 
 footer p {
-  background: var(--main-cosmic-late-color);
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
-  position: fixed;
+  background: #fef7e6;
+  position: relative;
   width: 100%;
-  bottom: 0;
 }
 
 @media (max-width: 800px) {
@@ -277,6 +277,21 @@ footer p {
   }
 }
 
+@media (max-width: 600px){
+  .container{
+    margin: 50px 10%;
+  }
+}
+
+@media (max-width: 380px){
+  .nav-list.active{
+    height: 40vh;
+
+    animation: aumentarCelular 1s;
+  }
+}
+
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -306,6 +321,16 @@ footer p {
   to {
     width: 96vw;
     height: 30vh;
+  }
+}
+@keyframes aumentarCelular {
+  from {
+    width: 96vw;
+    height: 0vh;
+  }
+  to {
+    width: 96vw;
+    height: 40vh;
   }
 }
 @keyframes midias-celular {

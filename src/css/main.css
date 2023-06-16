@@ -727,12 +727,14 @@ footer {
   }
   .titulo-inicio {
     font-size: 20px;
+    display: none;
   }
   .subtitulo-inicio {
     font-size: 14px;
     justify-content: start;
     text-justify: justify;
     margin-top: 0;
+    display: none;
   }
   .terceiro-titulo-inicio {
     font-size: 15px;
@@ -747,18 +749,14 @@ footer {
     display: none;
   }
   .descricao-inicio {
+    text-align: center;
     display: grid;
-    grid-template-areas:
-      "titulo-inicio terceiro-titulo-inicio"
-      "subtitulo-inicio terceiro-titulo-inicio ";
+    grid-template-areas:"terceiro-titulo-inicio ";
 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
     padding: 0px 2%;
-    text-align: start;
-    align-items: start;
-    justify-content: start;
   }
 
   .grid-container-inicio {
@@ -859,7 +857,6 @@ footer {
   }
   /* FOOTER FOOTER 800px FOOTER FOOTER */
 }
-
 @media (max-width: 415px) {
   /* SOBRE SOBRE SOBRE SOBRE */
   /* SOBRE SOBRE SOBRE SOBRE */
@@ -926,6 +923,14 @@ footer {
     padding: 20px 10%;
   }
   /* FOOTER FOOTER 415px FOOTER FOOTER */
+}
+
+@media (max-width: 380px){
+  .nav-list.active{
+    height: 40vh;
+
+    animation: aumentarCelular 1s;
+  }
 }
 
 #ondas-dao-trabalho {
@@ -998,6 +1003,17 @@ footer {
   to {
     width: 96vw;
     height: 30vh;
+  }
+}
+
+@keyframes aumentarCelular {
+  from {
+    width: 96vw;
+    height: 0vh;
+  }
+  to {
+    width: 96vw;
+    height: 40vh;
   }
 }
 @keyframes midias-celular {

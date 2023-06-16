@@ -141,19 +141,24 @@ header .logo {
 .pergunta {
   grid-area: pergunta;
   font-family: "Lato", sans-serif;
-  font-size: 80px;
+  font-size: 500%;
   letter-spacing: 20px;
   font-weight: normal;
   color: #ffffff;
+  display: flex;
+  align-items: center;
 }
 
 .frequente {
   grid-area: frequente;
+  display: flex;
   font-family: "Lato", sans-serif;
-  font-size: 80px;
+  font-size: 500%;
   letter-spacing: 20px;
   font-weight: normal;
   color: #ffffff;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 #question {
@@ -168,7 +173,6 @@ header .logo {
 }
 
 .section-perguntas {
-  z-index: 300;
   margin: 100px 15%;
 }
 
@@ -206,6 +210,31 @@ footer p {
   background: #fef7e6;
   position: relative;
   width: 100%;
+}
+
+
+@media (max-width: 1200px){
+  .pergunta{
+    font-size: 400%;
+  }
+  .frequente{
+    font-size: 400%
+  }
+}
+
+@media (max-width: 1000px){
+  .pergunta{
+    font-size: 300%;
+  }
+  .frequente{
+    font-size: 300%
+  }
+  .section-perguntas {
+    margin: 100px 10%;
+  }
+  .section-perguntas details summary {
+    padding: 3%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -311,7 +340,54 @@ footer p {
     width: 50px;
     margin-left: 5%;
   }
+  .pergunta{
+    font-size: 250%;
+    letter-spacing: 10px;
+  }
+  .frequente{
+    font-size: 250%;
+    letter-spacing: 10px;
+  }
 }
+
+@media (max-width: 600px){
+  .pergunta{
+    font-size: 250%;
+    letter-spacing: 5px;
+  }
+  .frequente{
+    font-size: 250%;
+    letter-spacing: 5px;
+  }
+  .section-perguntas {
+    margin: 100px 5%;
+  }
+}
+
+
+@media (max-width: 500px){
+  .pergunta{
+    font-size: 200%;
+    letter-spacing: 5px;
+  }
+  .frequente{
+    font-size: 200%;
+    letter-spacing: 5px;
+  }
+
+  .section-perguntas details summary {
+    padding: 5%;
+  }
+
+}
+@media (max-width: 380px){
+  .nav-list.active{
+    height: 40vh;
+
+    animation: aumentarCelular 1s;
+  }
+}
+
 
 @keyframes navLinkFade {
   from {
@@ -344,6 +420,18 @@ footer p {
     height: 30vh;
   }
 }
+
+@keyframes aumentarCelular {
+  from {
+    width: 96vw;
+    height: 0vh;
+  }
+  to {
+    width: 96vw;
+    height: 40vh;
+  }
+}
+
 @keyframes midias-celular {
   from {
     opacity: 0;

@@ -386,6 +386,7 @@ footer p {
     
 }
 
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -395,6 +396,18 @@ footer p {
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+
+@keyframes aumentarCelular {
+  from {
+    width: 96vw;
+    height: 0vh;
+  }
+  to {
+    width: 96vw;
+    height: 40vh;
   }
 }
 
@@ -429,5 +442,12 @@ footer p {
   to {
     opacity: 1;
     scale: 1;
+  }
+}
+@media (max-width: 380px){
+  .nav-list.active{
+    height: 40vh;
+
+    animation: aumentarCelular 1s;
   }
 }
