@@ -432,7 +432,7 @@ footer {
       "img2 text2"
       "text3 img3";
     row-gap: 40px;
-    margin-bottom: 150px;
+    margin-bottom: -10px;
   }
   #txt_1_sobre {
     padding-left: 12%;
@@ -982,6 +982,9 @@ footer {
 
   #sobre img {
     max-width: 90vw;
+  }
+  #sobre p{
+    padding: 0px 6%;
   }
 
   /* SOBRE SOBRE SOBRE SOBRE */

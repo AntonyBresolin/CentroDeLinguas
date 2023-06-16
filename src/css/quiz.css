@@ -168,7 +168,7 @@ main h1 {
 footer p {
   padding: 10px;
   text-align: center;
-  background: #fef7e6;
+  background: var(--main-white-color);
   position: relative;
   width: 100%;
 }
