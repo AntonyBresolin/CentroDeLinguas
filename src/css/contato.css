@@ -32,6 +32,7 @@ body {
   width: 100%;
 }
 
+
 header {
   width: 100%;
   top: 0;
@@ -41,10 +42,11 @@ header {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  padding: 10px 5%;
+  padding: 0px 5%;
   transition-duration: 0.3s;
   align-content: center;
   position: relative;
+  margin-bottom: 40px;
 }
 
 header img {
@@ -185,7 +187,7 @@ form label {
 }
 
 form {
-    margin-top: 30px;
+    margin-top: 10px;
     display: grid;
     grid-template-areas:
         'labelNome labelTelefone'
@@ -209,7 +211,7 @@ form input {
 
 form textarea {
     padding: 15px;
-    height: 250px;
+    height: 150px;
     border-radius: 20px;
     border: 1px solid #ccc;
     resize: none;
@@ -257,12 +259,9 @@ footer p {
 }
 
 @media (max-width: 800px) {
-
   header {
     background: #4c7fd9;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 96vw;
+    padding: 10px 5%;
     margin: 10px auto;
   }
 
@@ -272,6 +271,9 @@ footer p {
 
   .header-celular-ativo {
     background: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 96vw;
   }
   .header-celular-ativo .logo p {
     color: #2b3d73;
