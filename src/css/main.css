@@ -29,11 +29,9 @@ body {
 }
 
 .fundo_Inicial {
-  background: linear-gradient(
-    0deg,
-    rgba(76, 127, 217, 1) 12%,
-    rgba(255, 255, 255, 1) 62%
-  );
+  background: linear-gradient(0deg,
+      rgba(76, 127, 217, 1) 12%,
+      rgba(255, 255, 255, 1) 62%);
   padding-bottom: 20px;
 }
 
@@ -53,6 +51,7 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
 }
+
 .topo .fechar-notificacao {
   position: absolute;
   right: 0;
@@ -63,6 +62,7 @@ body {
   font-size: 20px;
   transition: all 0.3s;
 }
+
 .topo .fechar-notificacao:hover {
   color: #f83636;
   transform: scale(1.5);
@@ -82,6 +82,7 @@ header {
   align-content: center;
   position: relative;
 }
+
 header.scrollado {
   background: var(--main-white-color);
 }
@@ -156,12 +157,15 @@ header .logo {
 .h-btn:hover {
   transform: scale(1.1);
 }
+
 .backgroud-menu {
   display: none;
 }
+
 .cel-nav {
   display: flex;
 }
+
 .midias-celular {
   display: none;
 }
@@ -347,6 +351,70 @@ footer {
 }
 
 
+#flex-sobre-ondaa {
+  background-color: var(--main-cosmic-late-color);
+}
+
+
+/* Professores */
+/* Professores */
+/* Professores */
+#professores {
+  width: 100%;
+  justify-items: center;
+}
+
+#professores {
+  width: 100%;
+  height: 3000px;
+  padding: 50px 5%;
+  background-color: var(--main-blue-azure-color);
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+    " img1 text1"
+    " text2 img2"
+    " img3 text3"
+    " text4 img4";
+  row-gap: 40px;
+  margin-bottom: 150px;
+}
+
+#professores p {
+  font-size: 20pt;
+  line-height: 40px;
+  text-align: justify;
+  color: #FEF7E6;
+  font-family: "Lato", sans-serif;
+}
+
+
+#professores img {
+  max-width: 25vw;
+}
+
+#professores div {
+  padding: 20px;
+  background: #FEF7E6;
+}
+
+#professores-text1 {
+  padding-right: 15%;
+}
+
+#professores-text3 {
+  padding-right: 15%;
+}
+
+#professores-text2 {
+  padding-left: 15%;
+}
+
+#professores-text4 {
+  padding-left: 15%;
+}
+
+/*tamanho de uma tela grande*/
 @media (min-width: 1601px) {
   /* SOBRE SOBRE SOBRE SOBRE */
   /* SOBRE SOBRE SOBRE SOBRE */
@@ -364,6 +432,7 @@ footer {
       "img2 text2"
       "text3 img3";
     row-gap: 40px;
+    margin-bottom: 150px;
   }
   #txt_1_sobre {
     padding-left: 12%;
@@ -389,15 +458,18 @@ footer {
   #sobre img {
     max-width: 30vw;
   }
+
   /* FOOTER FOOTER 1600px FOOTER FOOTER */
   .textos-footer {
     max-height: 140px;
     align-self: center;
   }
+
   .frase-footer {
     font-size: 35pt;
     line-height: 70px;
   }
+
   .autor-footer {
     font-size: 25pt;
   }
@@ -405,25 +477,48 @@ footer {
   .redes-sociais-footer img {
     width: 70px;
   }
+
   .redes-sociais-footer {
     gap: 10px;
     padding-top: 10px;
     flex-direction: column;
     padding-left: 5%;
   }
+
   #footer-bottom {
     font-size: 17pt;
   }
+
   .footer1 {
     flex-direction: row;
   }
+
   .container-footer {
     padding: 60px 10%;
     padding-bottom: 100px;
   }
+
   /* FOOTER FOOTER 1600px FOOTER FOOTER */
+
+  /*professores*/
+  #professores {
+    width: 100%;
+    height: 2000px;
+    padding: 50px 5%;
+    background-color: var(--main-blue-azure-color);
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+      " img1 text1"
+      " text2 img2"
+      " img3 text3"
+      " text4 img4";
+    row-gap: 40px;
+    margin-bottom: 150px;
+  }
 }
 
+/*essa é o tamanho de um pc*/
 @media (max-width: 1600px) {
   .titulo-inicio {
     font-size: 50px;
@@ -468,19 +563,25 @@ footer {
   #sobre img {
     max-width: 30vw;
   }
+
   /* SOBRE SOBRE SOBRE SOBRE */
   /* SOBRE SOBRE SOBRE SOBRE */
   /* SOBRE SOBRE SOBRE SOBRE */
+
+
+
 
   /* FOOTER FOOTER 1600px FOOTER FOOTER */
   .textos-footer {
     max-height: 150px;
     align-self: center;
   }
+
   .frase-footer {
     font-size: 27pt;
     line-height: 50px;
   }
+
   .autor-footer {
     font-size: 22pt;
   }
@@ -488,24 +589,47 @@ footer {
   .redes-sociais-footer img {
     width: 70px;
   }
+
   .redes-sociais-footer {
     gap: 10px;
     padding-top: 10px;
     flex-direction: column;
     padding-left: 5%;
   }
+
   #footer-bottom {
     font-size: 16pt;
   }
+
   .footer1 {
     flex-direction: row;
   }
+
   .container-footer {
     padding: 60px 10%;
     padding-bottom: 50px;
   }
+
+  /*professores*/
+  #professores {
+    width: 100%;
+    height: 2000px;
+    padding: 50px 5%;
+    background-color: var(--main-blue-azure-color);
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+      " img1 text1"
+      " text2 img2"
+      " img3 text3"
+      " text4 img4";
+    row-gap: 40px;
+    margin-bottom: 150px;
+
+  }
 }
 
+/*essa é o tamanho de um pc pequeno*/
 @media (max-width: 1200px) {
   .grid-container-inicio {
     grid-template-areas:
@@ -540,10 +664,12 @@ footer {
     max-height: 100px;
     align-self: center;
   }
+
   .frase-footer {
     font-size: 20pt;
     line-height: 40px;
   }
+
   .autor-footer {
     font-size: 16pt;
   }
@@ -551,22 +677,27 @@ footer {
   .redes-sociais-footer img {
     width: 50px;
   }
+
   .redes-sociais-footer {
     gap: 10px;
     padding-top: 10px;
     flex-direction: column;
     padding-left: 5%;
   }
+
   #footer-bottom {
     font-size: 12pt;
   }
+
   .footer1 {
     flex-direction: row;
   }
+
   .container-footer {
     padding: 60px 10%;
     padding-bottom: 40px;
   }
+
   #sobre {
     padding: 50px 5%;
     background-color: var(--main-cosmic-late-color);
@@ -595,12 +726,31 @@ footer {
   #sobre img {
     max-width: 30vw;
   }
+
+  /*professores*/
+  #professores {
+    width: 100%;
+    height: 2000px;
+    padding: 50px 5%;
+    background-color: var(--main-blue-azure-color);
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+      " img1 text1"
+      " text2 img2"
+      " img3 text3"
+      " text4 img4";
+    row-gap: 40px;
+    margin-bottom: 150px;
+  }
 }
 
+/*essa é o tamanho de um tablet*/
 @media (max-width: 800px) {
   .fundo_Inicial {
     background: #4c7fd9;
   }
+
   .topo {
     display: flex;
     justify-content: space-between;
@@ -617,6 +767,7 @@ footer {
     border-radius: 50%;
     transition: all 0.3s;
   }
+
   header {
     background: #4c7fd9;
     margin: 0px auto;
@@ -626,6 +777,7 @@ footer {
   header .logo p {
     color: #fff;
   }
+
   .fundo_Inicial {
     z-index: 10000;
   }
@@ -636,9 +788,11 @@ footer {
     border-top-right-radius: 30px;
     width: 96vw;
   }
+
   .header-celular-ativo .logo p {
     color: #2b3d73;
   }
+
   .header-celular-ativo .mobile-menu div {
     background: #2b3d73;
   }
@@ -660,6 +814,7 @@ footer {
     transition: all 1s cubic-bezier(0.37, 0, 0.63, 1);
     display: none;
   }
+
   .backgroud-menu {
     z-index: 1;
     position: absolute;
@@ -669,10 +824,12 @@ footer {
     left: 0;
     top: 0;
   }
+
   .background-celular-ativo {
     display: block;
     animation: background-celular-ativo 1s;
   }
+
   .cel-nav {
     display: flex;
     width: 100%;
@@ -681,6 +838,7 @@ footer {
     transition: transform 1s cubic-bezier(0.37, 0, 0.63, 1);
     padding: 0 5%;
   }
+
   .cel-nav li {
     padding-top: 2vh;
     width: 100%;
@@ -712,6 +870,7 @@ footer {
     width: 96vw;
     height: 30vh;
   }
+
   .midias-celular-ativo {
     display: flex;
     width: 100%;
@@ -721,31 +880,38 @@ footer {
     animation: midias-celular 1.5s;
     align-items: center;
   }
+
   .midias-celular-ativo img {
     width: 50px;
     margin-left: 5%;
   }
+
   .titulo-inicio {
     font-size: 20px;
   }
+
   .subtitulo-inicio {
     font-size: 14px;
     justify-content: start;
     text-justify: justify;
     margin-top: 0;
   }
+
   .terceiro-titulo-inicio {
     font-size: 15px;
     justify-content: start;
     text-justify: justify;
     padding: 0;
   }
+
   .citacao-titulo {
     display: none;
   }
+
   .quarto-titulo-inicio {
     display: none;
   }
+
   .descricao-inicio {
     display: grid;
     grid-template-areas:
@@ -833,33 +999,68 @@ footer {
     font-size: 16pt;
     line-height: 30px;
   }
+
   .autor-footer {
     font-size: 14pt;
   }
+
   .redes-sociais-footer {
     gap: 10px;
     flex-direction: row;
   }
+
   .redes-sociais-footer img {
     width: 40px;
   }
+
   .redes-sociais-footer {
     padding-top: 10px;
     flex-direction: row;
     padding-left: 0%;
   }
+
   #footer-bottom {
     font-size: 12pt;
   }
+
   .footer1 {
     flex-direction: column;
   }
+
   .container-footer {
     padding: 20px 10%;
   }
+
   /* FOOTER FOOTER 800px FOOTER FOOTER */
+
+  /*professores*/
+  /*professores*/
+  /*professores*/
+  #professores {
+    width: 100%;
+    height: 2000px;
+    padding: 50px 5%;
+    background-color: var(--main-blue-azure-color);
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+      " img1 text1"
+      " text2 img2"
+      " img3 text3"
+      " text4 img4";
+    row-gap: 40px;
+    margin-bottom: 80px;
+  }
+  #professores p {
+    font-size: 15pt;
+    line-height: 25px;
+    text-align: justify;
+    color: #FEF7E6;
+    font-family: "Lato", sans-serif;
+  }
 }
 
+/*essa é o tamanho de um celular*/
 @media (max-width: 415px) {
   /* SOBRE SOBRE SOBRE SOBRE */
   /* SOBRE SOBRE SOBRE SOBRE */
@@ -904,28 +1105,87 @@ footer {
     font-size: 11pt;
     line-height: 20px;
   }
+
   .autor-footer {
     font-size: 10pt;
   }
+
   .redes-sociais-footer {
     gap: 10px;
     padding-top: 5px;
     flex-direction: row;
     padding-left: 0%;
   }
+
   .redes-sociais-footer img {
     width: 25px;
   }
+
   #footer-bottom {
     font-size: 10px;
   }
+
   .footer1 {
     flex-direction: column;
   }
+
   .container-footer {
     padding: 20px 10%;
   }
+
   /* FOOTER FOOTER 415px FOOTER FOOTER */
+  /*professores*/
+  /*professores*/
+  /*professores*/
+  #professores {
+    width: 100%;
+    height: 2000px;
+    padding: 50px 5%;
+    background-color: var(--main-blue-azure-color);
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+      "img1 "
+      "text1"
+      "img2"
+      "text2"
+      "img3"
+      "text3"
+      "img4"
+      "text4";
+    row-gap: 40px;
+    margin-bottom: 150px;
+  }
+  #professores p {
+    font-size: 15pt;
+    line-height: 25px;
+    text-align: justify;
+    color: #FEF7E6;
+    font-family: "Lato", sans-serif;
+  }
+  #professores img {
+    max-width: 40vw;
+  }
+  #professores div {
+    padding: 10px;
+    background: #FEF7E6;
+  }
+  #professores-text1 {
+    padding-right: 3%;
+  }
+  
+  #professores-text3 {
+    padding-right: 3%;
+  }
+  
+  #professores-text2 {
+    padding-left: 3%;
+  }
+  
+  #professores-text4 {
+    padding-left: 3%;
+  }
+
 }
 
 #ondas-dao-trabalho {
@@ -947,6 +1207,59 @@ footer {
 
 .onda-3 {
   animation: moveWave3 10s 0.7s ease-in-out infinite alternate;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER */
+#flex-sobre-onda-footer {
+  background-color: var(--main-blue-azure-color);
+  width: 100%;
+  margin-top: -100px;
+}
+
+#flex-sobre-onda-footer div {
+  background-color: var(--main-cosmic-late-color);
+  width: 100%;
+  height: 30px;
+  scale: 1.1;
+  margin-left: -5%;
+}
+
+footer {
+  display: flexbox;
+  position: relative;
+}
+
+.textos-footer {
+  background-color: var(--main-cosmic-late-color);
+}
+
+.frase-footer {
+  text-align: justify;
+}
+
+.autor-footer {
+  text-align: right;
+}
+
+#footer-bottom {
+  background-color: var(--main-dark-blue-color);
+  color: var(--main-cosmic-late-color);
+  width: 100%;
+  padding: 6px 0px;
+  text-align: center;
+}
+
+.footer1 {
+  display: flex;
+}
+
+.container-footer {
+  background-color: var(--main-cosmic-late-color);
+  width: 100%;
+}
+
+.redes-sociais-footer {
+  display: flex;
 }
 
 @keyframes navLinkFade {
@@ -985,6 +1298,7 @@ footer {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -995,20 +1309,24 @@ footer {
     width: 96vw;
     height: 0vh;
   }
+
   to {
     width: 96vw;
     height: 30vh;
   }
 }
+
 @keyframes midias-celular {
   from {
     opacity: 0;
     scale: 0;
   }
+
   50% {
     opacity: 0;
     scale: 0;
   }
+
   to {
     opacity: 1;
     scale: 1;
