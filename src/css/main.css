@@ -44,19 +44,20 @@ body {
 }
 
 .topo {
+  display: flex;
+  justify-content: center;
   background: var(--main-dark-blue-color);
   color: var(--main-white-color);
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 2%;
   font-size: 1rem;
   text-transform: uppercase;
 }
 
 .topo .fechar-notificacao {
   position: absolute;
-  right: 0;
-  top: 0;
-  padding: 10px;
+  right: 10px;
+  top: 10px;
   cursor: pointer;
   color: var(--main-white-color);
   font-size: 20px;
@@ -755,17 +756,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2%;
+    padding: 5px 2%;
   }
 
   .topo .fechar-notificacao {
     position: relative;
-    display: block;
     cursor: pointer;
     color: #f83636;
-    background: #fff;
-    border-radius: 50%;
     transition: all 0.3s;
+    font-size: 40px;
+    top: 0px;
+    right: 0px;
+    margin-left: 10px;
   }
 
   header {

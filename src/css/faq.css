@@ -118,21 +118,24 @@ header .logo {
 .h-btn:hover {
   transform: scale(1.1);
 }
+
 .backgroud-menu {
   display: none;
 }
+
 .cel-nav {
   display: flex;
 }
+
 .midias-celular {
   display: none;
 }
 
-.titulo-pagina{
+.titulo-pagina {
   margin: 0px 10%;
   display: grid;
   grid-template-areas: 'pergunta pergunta'
-                        'frequente frequente';
+    'frequente frequente';
   justify-content: center;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -213,25 +216,29 @@ footer p {
 }
 
 
-@media (max-width: 1200px){
-  .pergunta{
+@media (max-width: 1200px) {
+  .pergunta {
     font-size: 400%;
   }
-  .frequente{
+
+  .frequente {
     font-size: 400%
   }
 }
 
-@media (max-width: 1000px){
-  .pergunta{
+@media (max-width: 1000px) {
+  .pergunta {
     font-size: 300%;
   }
-  .frequente{
+
+  .frequente {
     font-size: 300%
   }
+
   .section-perguntas {
     margin: 100px 10%;
   }
+
   .section-perguntas details summary {
     padding: 3%;
   }
@@ -258,6 +265,7 @@ footer p {
   .header-celular-ativo .logo p {
     color: #2b3d73;
   }
+
   .header-celular-ativo .mobile-menu div {
     background: #2b3d73;
   }
@@ -274,6 +282,7 @@ footer p {
     transition: all 1s cubic-bezier(0.37, 0, 0.63, 1);
     display: none;
   }
+
   .backgroud-menu {
     z-index: 1;
     position: absolute;
@@ -283,10 +292,12 @@ footer p {
     left: 0;
     top: 0;
   }
+
   .background-celular-ativo {
     display: block;
     animation: background-celular-ativo 1s;
   }
+
   .cel-nav {
     display: flex;
     width: 100%;
@@ -327,6 +338,7 @@ footer p {
     width: 96vw;
     height: 30vh;
   }
+
   .midias-celular-ativo {
     display: flex;
     width: 100%;
@@ -336,41 +348,47 @@ footer p {
     animation: midias-celular 1.5s;
     align-items: center;
   }
+
   .midias-celular-ativo img {
     width: 50px;
     margin-left: 5%;
   }
-  .pergunta{
+
+  .pergunta {
     font-size: 250%;
     letter-spacing: 10px;
   }
-  .frequente{
+
+  .frequente {
     font-size: 250%;
     letter-spacing: 10px;
   }
 }
 
-@media (max-width: 600px){
-  .pergunta{
+@media (max-width: 600px) {
+  .pergunta {
     font-size: 250%;
     letter-spacing: 5px;
   }
-  .frequente{
+
+  .frequente {
     font-size: 250%;
     letter-spacing: 5px;
   }
+
   .section-perguntas {
     margin: 100px 5%;
   }
 }
 
 
-@media (max-width: 500px){
-  .pergunta{
+@media (max-width: 500px) {
+  .pergunta {
     font-size: 200%;
     letter-spacing: 5px;
   }
-  .frequente{
+
+  .frequente {
     font-size: 200%;
     letter-spacing: 5px;
   }
@@ -380,8 +398,9 @@ footer p {
   }
 
 }
-@media (max-width: 380px){
-  .nav-list.active{
+
+@media (max-width: 380px) {
+  .nav-list.active {
     height: 40vh;
 
     animation: aumentarCelular 1s;
@@ -405,6 +424,7 @@ footer p {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -415,6 +435,7 @@ footer p {
     width: 96vw;
     height: 0vh;
   }
+
   to {
     width: 96vw;
     height: 30vh;
@@ -426,6 +447,7 @@ footer p {
     width: 96vw;
     height: 0vh;
   }
+
   to {
     width: 96vw;
     height: 40vh;
@@ -437,10 +459,12 @@ footer p {
     opacity: 0;
     scale: 0;
   }
+
   50% {
     opacity: 0;
     scale: 0;
   }
+
   to {
     opacity: 1;
     scale: 1;

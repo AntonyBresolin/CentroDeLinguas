@@ -118,12 +118,15 @@ header .logo {
 .h-btn:hover {
   transform: scale(1.01);
 }
+
 .backgroud-menu {
   display: none;
 }
+
 .cel-nav {
   display: flex;
 }
+
 .midias-celular {
   display: none;
 }
@@ -143,7 +146,7 @@ main h1 {
 .container {
   display: grid;
   margin: 50px 25%;
- 
+
 }
 
 .button {
@@ -159,10 +162,11 @@ main h1 {
   line-height: 50px;
   margin-bottom: 20px;
 }
+
 .button:hover {
   background-color: #f8de7e;
   transition: all .5s ease-in-out;
-  transform: scale(1.05) ;
+  transform: scale(1.05);
 }
 
 footer p {
@@ -190,9 +194,11 @@ footer p {
     border-top-right-radius: 30px;
     width: 96vw;
   }
+
   .header-celular-ativo .logo p {
     color: #2b3d73;
   }
+
   .header-celular-ativo .mobile-menu div {
     background: #2b3d73;
   }
@@ -209,6 +215,7 @@ footer p {
     transition: all 1s cubic-bezier(0.37, 0, 0.63, 1);
     display: none;
   }
+
   .backgroud-menu {
     z-index: 1;
     position: absolute;
@@ -218,10 +225,12 @@ footer p {
     left: 0;
     top: 0;
   }
+
   .background-celular-ativo {
     display: block;
     animation: background-celular-ativo 1s;
   }
+
   .cel-nav {
     display: flex;
     width: 100%;
@@ -262,6 +271,7 @@ footer p {
     width: 96vw;
     height: 30vh;
   }
+
   .midias-celular-ativo {
     display: flex;
     width: 100%;
@@ -271,20 +281,21 @@ footer p {
     animation: midias-celular 1.5s;
     align-items: center;
   }
+
   .midias-celular-ativo img {
     width: 50px;
     margin-left: 5%;
   }
 }
 
-@media (max-width: 600px){
-  .container{
+@media (max-width: 600px) {
+  .container {
     margin: 50px 10%;
   }
 }
 
-@media (max-width: 380px){
-  .nav-list.active{
+@media (max-width: 380px) {
+  .nav-list.active {
     height: 40vh;
 
     animation: aumentarCelular 1s;
@@ -308,6 +319,7 @@ footer p {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -318,30 +330,36 @@ footer p {
     width: 96vw;
     height: 0vh;
   }
+
   to {
     width: 96vw;
     height: 30vh;
   }
 }
+
 @keyframes aumentarCelular {
   from {
     width: 96vw;
     height: 0vh;
   }
+
   to {
     width: 96vw;
     height: 40vh;
   }
 }
+
 @keyframes midias-celular {
   from {
     opacity: 0;
     scale: 0;
   }
+
   50% {
     opacity: 0;
     scale: 0;
   }
+
   to {
     opacity: 1;
     scale: 1;

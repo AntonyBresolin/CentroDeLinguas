@@ -1,12 +1,12 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    scroll-padding-top: 3.5rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem;
 }
 
 :root {
@@ -25,7 +25,7 @@
 body {
   background-color: var(--main-blue-color);
   overflow-x: hidden;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
@@ -119,143 +119,146 @@ header .logo {
 .h-btn:hover {
   transform: scale(1.1);
 }
+
 .backgroud-menu {
   display: none;
 }
+
 .cel-nav {
   display: flex;
 }
+
 .midias-celular {
   display: none;
 }
 
 main h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 80px;
-    text-decoration: none;
-    letter-spacing: 10px;
-    font-weight: normal;
-    text-align: center;
-    color: var(--main-white-color);
+  font-family: 'Lato', sans-serif;
+  font-size: 80px;
+  text-decoration: none;
+  letter-spacing: 10px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--main-white-color);
 }
 
 #contact {
-    background: var(--bg-color);
-    width: 100%;
-    position: relative;
+  background: var(--bg-color);
+  width: 100%;
+  position: relative;
 }
 
 .nome {
-    grid-area: nome;
+  grid-area: nome;
 }
 
 .telefone {
-    grid-area: telefone;
+  grid-area: telefone;
 }
 
 .email {
-    grid-area: email;
+  grid-area: email;
 }
 
 .mensagem {
-    grid-area: mensagem;
+  grid-area: mensagem;
 }
 
 .btn {
-    grid-area: botao;
+  grid-area: botao;
 }
 
 .labelNome {
-    grid-area: labelNome;
+  grid-area: labelNome;
 }
 
 .labelTelefone {
-    grid-area: labelTelefone;
+  grid-area: labelTelefone;
 }
 
 .labelEmail {
-    grid-area: labelEmail;
+  grid-area: labelEmail;
 }
 
 .labelMensagem {
-    grid-area: labelMensagem;
+  grid-area: labelMensagem;
 }
 
 form label {
-    color: var(--main-white-color);
-    margin-top: 15px;
+  color: var(--main-white-color);
+  margin-top: 15px;
 }
 
 form {
-    margin-top: 10px;
-    display: grid;
-    grid-template-areas:
-        'labelNome labelTelefone'
-        'nome telefone'
-        'labelEmail labelEmail'
-        'email email'
-        'labelMensagem labelMensagem'
-        'mensagem mensagem'
-        'botao botao';
-    gap: 10px;
-    padding: 0 30%;
-    transition: all .3s;
+  margin-top: 10px;
+  display: grid;
+  grid-template-areas:
+    'labelNome labelTelefone'
+    'nome telefone'
+    'labelEmail labelEmail'
+    'email email'
+    'labelMensagem labelMensagem'
+    'mensagem mensagem'
+    'botao botao';
+  gap: 10px;
+  padding: 0 30%;
+  transition: all .3s;
 
 }
 
 form input {
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
 form textarea {
-    padding: 15px;
-    height: 150px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    resize: none;
+  padding: 15px;
+  height: 150px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  resize: none;
 }
 
 form input:focus,
 form textarea:focus {
-    border: 1px solid var(--main-color);
-    outline: none;
+  border: 1px solid var(--main-color);
+  outline: none;
 }
 
 form .btn {
-    margin-top: 30px;
-    padding: 10px;
-    border-radius: 50px;
-    border: 1px solid var(--main-color);
-    box-shadow: 2px 5px 3px rgb(50, 50, 50);
-    background: #FFD372;
-    font-size: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid var(--main-color);
+  box-shadow: 2px 5px 3px rgb(50, 50, 50);
+  background: #FFD372;
+  font-size: 20px;
 }
 
 form .btn:hover {
-    background: #f5bd45;
-    color: var(--main-white-color);
-    padding: 10px;
-    box-shadow: 0px 0px 0px 0px;
+  background: #f5bd45;
+  color: var(--main-white-color);
+  padding: 10px;
+  box-shadow: 0px 0px 0px 0px;
 
-    transition: all .2s;
+  transition: all .2s;
 }
 
 
 footer p {
-    position: relative;
-    background: var(--main-white-color);
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 100px;
+  position: relative;
+  background: var(--main-white-color);
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 100px;
 }
 
 
 @media (max-width: 1300px) {
-    form {
-        padding: 0 20%;
-    }
+  form {
+    padding: 0 20%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -275,9 +278,11 @@ footer p {
     border-top-right-radius: 30px;
     width: 96vw;
   }
+
   .header-celular-ativo .logo p {
     color: #2b3d73;
   }
+
   .header-celular-ativo .mobile-menu div {
     background: #2b3d73;
   }
@@ -294,6 +299,7 @@ footer p {
     transition: all 1s cubic-bezier(0.37, 0, 0.63, 1);
     display: none;
   }
+
   .backgroud-menu {
     z-index: 1;
     position: absolute;
@@ -303,10 +309,12 @@ footer p {
     left: 0;
     top: 0;
   }
+
   .background-celular-ativo {
     display: block;
     animation: background-celular-ativo 1s;
   }
+
   .cel-nav {
     display: flex;
     width: 100%;
@@ -347,6 +355,7 @@ footer p {
     width: 96vw;
     height: 30vh;
   }
+
   .midias-celular-ativo {
     display: flex;
     width: 100%;
@@ -356,34 +365,35 @@ footer p {
     animation: midias-celular 1.5s;
     align-items: center;
   }
+
   .midias-celular-ativo img {
     width: 50px;
     margin-left: 5%;
   }
 
-    form {
-        grid-template: 'labelNome'
-            'nome'
-            'labelTelefone'
-            'telefone'
-            'labelEmail'
-            'email'
-            'labelMensagem'
-            'mensagem'
-            'botao';
-        padding: 0 10%;
-    }
+  form {
+    grid-template: 'labelNome'
+      'nome'
+      'labelTelefone'
+      'telefone'
+      'labelEmail'
+      'email'
+      'labelMensagem'
+      'mensagem'
+      'botao';
+    padding: 0 10%;
+  }
 
-    form label {
-        margin-top: 5px;
-    }
+  form label {
+    margin-top: 5px;
+  }
 
-    main h1 {
-        margin: 20px 0;
-        font-size: 40px;
-    }
+  main h1 {
+    margin: 20px 0;
+    font-size: 40px;
+  }
 
-    
+
 }
 
 
@@ -405,6 +415,7 @@ footer p {
     width: 96vw;
     height: 0vh;
   }
+
   to {
     width: 96vw;
     height: 40vh;
@@ -415,6 +426,7 @@ footer p {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -425,27 +437,32 @@ footer p {
     width: 96vw;
     height: 0vh;
   }
+
   to {
     width: 96vw;
     height: 30vh;
   }
 }
+
 @keyframes midias-celular {
   from {
     opacity: 0;
     scale: 0;
   }
+
   50% {
     opacity: 0;
     scale: 0;
   }
+
   to {
     opacity: 1;
     scale: 1;
   }
 }
-@media (max-width: 380px){
-  .nav-list.active{
+
+@media (max-width: 380px) {
+  .nav-list.active {
     height: 40vh;
 
     animation: aumentarCelular 1s;
