@@ -171,7 +171,6 @@ header .logo {
   padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
-
   margin-top: 400px;
 }
 
@@ -413,6 +412,18 @@ footer p {
 
     animation: aumentarCelular 1s;
   }
+  .section-perguntas details summary{
+    padding: 4%;
+  }
+}
+
+@media (max-width: 345px){
+    .pergunta{
+      justify-content: center;
+    }
+    .frequente{
+      justify-content: center;
+    }
 }
 
 
