@@ -215,6 +215,14 @@ footer p {
   width: 100%;
 }
 
+@media (min-width: 1600px){
+  .pergunta{
+    font-size: 600%;
+  }
+  .frequente{
+    font-size: 600%
+  }
+}
 
 @media (max-width: 1200px) {
   .pergunta {
