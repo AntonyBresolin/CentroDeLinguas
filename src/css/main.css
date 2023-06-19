@@ -309,6 +309,7 @@ header .logo {
   display: grid;
   align-items: center;
   grid-template-areas:
+    "titulo titulo"
     " img1 text1"
     " text2 img2"
     " img3 text3"
@@ -459,8 +460,26 @@ footer {
     max-width: 30vw;
   }
 
-  /* FOOTER FOOTER 1600px FOOTER FOOTER */
-  .textos-footer {
+  /*professores*/
+  #professores {
+    width: 100%;
+    height: 2000px;
+    padding: 50px 5%;
+    background-color: var(--main-blue-azure-color);
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+    "titulo titulo"
+    " img1 text1"
+    " text2 img2"
+    " img3 text3"
+    " text4 img4";
+    row-gap: 40px;
+    margin-bottom: 150px;
+  }
+
+   /* FOOTER FOOTER 1600px FOOTER FOOTER */
+   .textos-footer {
     max-height: 140px;
     align-self: center;
   }
@@ -499,23 +518,6 @@ footer {
   }
 
   /* FOOTER FOOTER 1600px FOOTER FOOTER */
-
-  /*professores*/
-  #professores {
-    width: 100%;
-    height: 2000px;
-    padding: 50px 5%;
-    background-color: var(--main-blue-azure-color);
-    display: grid;
-    align-items: center;
-    grid-template-areas:
-      " img1 text1"
-      " text2 img2"
-      " img3 text3"
-      " text4 img4";
-    row-gap: 40px;
-    margin-bottom: 150px;
-  }
 }
 
 /*essa é o tamanho de um pc*/
@@ -583,6 +585,7 @@ footer {
     display: grid;
     align-items: center;
     grid-template-areas:
+    "titulo titulo"
       " img1 text1"
       " text2 img2"
       " img3 text3"
@@ -740,6 +743,7 @@ footer {
     display: grid;
     align-items: center;
     grid-template-areas:
+    "titulo titulo"
       " img1 text1"
       " text2 img2"
       " img3 text3"
@@ -1012,6 +1016,7 @@ footer {
     display: grid;
     align-items: center;
     grid-template-areas:
+     "titulo titulo"
       " img1 text1"
       " text2 img2"
       " img3 text3"
@@ -1119,6 +1124,7 @@ footer {
     display: grid;
     align-items: center;
     grid-template-areas:
+    "titulo"
       "img1 "
       "text1"
       "img2"
