@@ -341,11 +341,12 @@ header .logo {
 #professores h1{
   font-size: 60pt;
   line-height: 40px;
-  text-align: justify;
+  text-align: center;
   color: #FEF7E6;
-  font-family: "Lato", sans-serif;
-
-
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin-bottom: 40px;
+  
 }
 
 
@@ -733,7 +734,8 @@ footer {
     line-height: 40px;
     text-align: justify;
     color: #FEF7E6;
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
   }
 
   .textos-footer {
@@ -1058,9 +1060,8 @@ footer {
     line-height: 40px;
     text-align: justify;
     color: #FEF7E6;
-    font-family: "Lato", sans-serif;
-  
-  
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
   }
 
   /* FOOTER FOOTER 800px FOOTER FOOTER */
@@ -1178,8 +1179,8 @@ footer {
     line-height: 40px;
     text-align: justify;
     color: #FEF7E6;
-    font-family: "Lato", sans-serif;
-  
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
   
   }
 
