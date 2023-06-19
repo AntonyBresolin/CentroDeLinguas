@@ -316,7 +316,6 @@ header .logo {
 
 #professores {
   width: 100%;
-  height: 3000px;
   padding: 50px 5%;
   background-color: var(--main-blue-azure-color);
   display: grid;
@@ -486,7 +485,6 @@ footer {
   /*professores*/
   #professores {
     width: 100%;
-    height: 2000px;
     padding: 50px 5%;
     background-color: var(--main-blue-azure-color);
     display: grid;
@@ -598,7 +596,6 @@ footer {
   /*professores*/
   #professores {
     width: 100%;
-    height: 2000px;
     padding: 50px 5%;
     background-color: var(--main-blue-azure-color);
     display: grid;
@@ -718,7 +715,6 @@ footer {
   /*professores*/
   #professores {
     width: 100%;
-    height: 2000px;
     padding: 50px 5%;
     background-color: var(--main-blue-azure-color);
     display: grid;
@@ -1036,7 +1032,6 @@ footer {
   /*professores*/
   #professores {
     width: 100%;
-    height: 2000px;
     padding: 50px 5%;
     background-color: var(--main-blue-azure-color);
     display: grid;
@@ -1153,7 +1148,6 @@ footer {
   /*professores*/
   #professores {
     width: 100%;
-    height: 2000px;
     padding: 50px 5%;
     background-color: var(--main-blue-azure-color);
     display: grid;
@@ -1169,7 +1163,7 @@ footer {
       "img4"
       "text4";
     row-gap: 40px;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
 
   #professores p {
@@ -1262,12 +1256,12 @@ footer {
 
 @media (max-width: 300px){
   #professores{
-    margin-bottom: 380px;
+    margin-bottom: 120px;
   }
 }
 @media(max-width: 281px){
   #professores{
-    margin-bottom: 420px;
+    margin-bottom: 120px;
   }
 }
 
