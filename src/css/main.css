@@ -326,6 +326,16 @@ header .logo {
   font-family: "Lato", sans-serif;
 }
 
+#professores h1{
+  font-size: 60pt;
+  line-height: 40px;
+  text-align: justify;
+  color: #FEF7E6;
+  font-family: "Lato", sans-serif;
+
+
+}
+
 
 #professores img {
   max-width: 25vw;
@@ -751,6 +761,15 @@ footer {
     row-gap: 40px;
     margin-bottom: 150px;
   }
+  #professores h1{
+    font-size: 30pt;
+    line-height: 40px;
+    text-align: justify;
+    color: #FEF7E6;
+    font-family: "Lato", sans-serif;
+  
+  
+  }
 }
 
 /*essa é o tamanho de um tablet*/
@@ -1032,6 +1051,15 @@ footer {
     color: #FEF7E6;
     font-family: "Lato", sans-serif;
   }
+  #professores h1{
+    font-size: 26pt;
+    line-height: 40px;
+    text-align: justify;
+    color: #FEF7E6;
+    font-family: "Lato", sans-serif;
+  
+  
+  }
 
   /* FOOTER FOOTER 800px FOOTER FOOTER */
 
@@ -1143,6 +1171,15 @@ footer {
     text-align: justify;
     color: #FEF7E6;
     font-family: "Lato", sans-serif;
+  }
+  #professores h1{
+    font-size: 25pt;
+    line-height: 40px;
+    text-align: justify;
+    color: #FEF7E6;
+    font-family: "Lato", sans-serif;
+  
+  
   }
 
   #professores img {
